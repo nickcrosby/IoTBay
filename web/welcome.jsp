@@ -1,4 +1,4 @@
-<%@page import="uts.isd.model.User"%>
+<%@page import="uts.isd.model.Customer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -43,8 +43,8 @@
         <!--Store user data into session-->
         <!--Transport user data to Main-->
         <%
-            User user = new User(fname, lname, phone, password, dob, email, address);
-            session.setAttribute("user", user);
+            Customer customer = new Customer(fname, lname, phone, password, dob, email, address);
+            session.setAttribute("customer", customer);
         %>
     </body>
 </html>

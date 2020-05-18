@@ -1,4 +1,4 @@
-<%@page import="uts.isd.model.User"%>
+<%@page import="uts.isd.model.Customer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,7 @@
         </div>
         <!--Get the registration information of users-->
         <%
-            User user = (User) session.getAttribute("user");
+            Customer customer = (Customer) session.getAttribute("customer");
         %>
         <section>
             <!--USer profile-->
@@ -22,7 +22,7 @@
                 <table class="mainProfile">
                     <thead><th>First Name</th> <th>Last Name</th> <th>Address</th> <th>Phone</th> <th>Password</th> <th>D.O.B</th> <th>Email</th></thead>
                     <!--Placeholder to auto fill fields-->
-                    <tr><td>${user.fname}</td> <td>${user.lname}</td> <td>${user.phone}</td> <td>${user.password}</td> <td>${user.dob}</td> <td>${user.email}</td> <td>${user.address}</td></tr>
+                    <tr><td>${customer.fname}</td> <td>${customer.lname}</td> <td>${customer.phone}</td> <td>${customer.password}</td> <td>${customer.dob}</td> <td>${customer.email}</td> <td>${customer.address}</td></tr>
                 </table>
                 <!--Logout-->
                 <div class="mainContainer">

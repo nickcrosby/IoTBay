@@ -1,6 +1,6 @@
 package uts.isd.model;
 
-public class User {
+public class Customer {
 
     //Registration data fields
     private String fname;
@@ -12,7 +12,7 @@ public class User {
     private String phone;
 
     //Initialise constructor with user fields
-    public User(String fname, String lname, String password, String dob, String email, String address, String phone) {
+    public Customer(String fname, String lname, String password, String dob, String email, String address, String phone) {
         this.fname = fname;
         this.lname = lname;
         this.password = password;
@@ -67,7 +67,7 @@ public class User {
     }
 
     public void setAddress(String address) {
-        this.address = address;;
+        this.address = address;
     }
 
     public String getPhone() {
