@@ -18,6 +18,7 @@
                 <p class="welcome">Welcome to IoTBay</p><br>
                 <a href="login.jsp" id="login">Login</a>
                 <a href="register.jsp" id="register">Register</a>
+                <a href="catalogue.jsp" id="devcatalogue">Catalogue</a>
             </div>
         </section>
     </body>
