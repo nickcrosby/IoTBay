@@ -26,7 +26,7 @@
                 </table>
                 <!--Logout-->
                 <div class="mainContainer">
-                    <a href="logout.jsp" target="_blank" class="logout">Logout</a>
+                    <a href="logout.jsp" class="logout">Logout</a>
                 </div>
             </div>
         </section>

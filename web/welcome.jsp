@@ -35,7 +35,7 @@
             </div>
             <!--Go to main-->
             <div>
-                <a href="main.jsp" target="_blank">Main</a>
+                <a href="main.jsp">Main</a>
             </div>
         </section>
 

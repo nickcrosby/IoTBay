@@ -16,8 +16,8 @@
             <div class="mainContainer">
                 <h1>IoTBay</h1><br>
                 <p class="welcome">Welcome to IoTBay</p><br>
-                <a href="login.jsp" target="_blank" id="login">Login</a>
-                <a href="register.jsp" target="_blank" id="register">Register</a>
+                <a href="login.jsp" id="login">Login</a>
+                <a href="register.jsp" id="register">Register</a>
             </div>
         </section>
     </body>
