@@ -33,9 +33,10 @@
                 <p>Email Address: <%= email%></p><br>
                 <p>Address: <%= address%></p><br>
             </div>
-            <!--Go to main-->
+            <!--Go to main and logout-->
             <div>
                 <a href="main.jsp">Main</a>
+                <a href="logout.jsp">Logout</a>
             </div>
         </section>
 

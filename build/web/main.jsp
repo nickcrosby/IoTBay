@@ -24,9 +24,10 @@
                     <!--Placeholder to auto fill fields-->
                     <tr><td>${customer.fname}</td> <td>${customer.lname}</td> <td>${customer.phone}</td> <td>${customer.password}</td> <td>${customer.dob}</td> <td>${customer.email}</td> <td>${customer.address}</td></tr>
                 </table>
-                <!--Logout-->
+                <!--Logout and Back navigation-->
                 <div class="mainContainer">
-                    <a href="logout.jsp" class="logout">Logout</a>
+                    <a href="welcome.jsp">Back</a>
+                    <a href="logout.jsp" class="logout">Logout</a>    
                 </div>
             </div>
         </section>

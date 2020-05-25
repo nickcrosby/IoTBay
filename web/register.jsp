@@ -27,6 +27,7 @@
                     <tr><td></td><td><input type="submit" value="Register"></td></tr>     
                 </table>
             </form>
+            <a href="index.jsp" class="backButton">Back</a>
         </section>
     </body>
 </html>
