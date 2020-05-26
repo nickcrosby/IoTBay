@@ -1,0 +1,21 @@
+INSERT INTO CUSTOMER (EMAILADDRESS, FIRSTNAME, LASTNAME, ADDRESS, PHONENUMBER, DOB, PASSWORD)
+VALUES
+('dpeppard0@1688.com', 'Darn', 'Peppard', '39118 Fremont Center', 58653451, '28/01/2005', 'V5Qql1NFSe'),
+('eixor1@cnn.com', 'Ezra', 'Ixor', '287 Washington Crossing', 55115039, '08/07/2005', '14J0Kmb'),
+('bcushworth2@cbc.ca', 'Blake',	'Cushworth', '4684 Stone Corner Pass', 23215762, '05/10/2003', 'YbP5ZJt7FnM'),
+('amacalroy3@gov.uk', 'Agnola', 'MacAlroy', '35 Cordelia Court', 90172680, '15/11/2002', 'HMpef74N4lb'),
+('aopy4@dedecms.com', 'Ardine',	'Opy', '1393 Merry Road', 47334431, '11/08/2007', 'g2Ox0unAu'),
+('fslowgrave5@washpost.com', 'Fletcher', 'Slowgrave', '932 Dryden Road', 76865470, '17/11/2007', 'bKQATBnASI'),
+('bjollie6@ifeng.com', 'Bria', 'Jollie', '4 Anhalt Lane', 95619521, '21/08/2019', 'KxQs2aF'),
+('friddiough7@xrea.com', 'Felice', 'Riddiough', '11505 Memorial Center', 99268357, '11/11/2012', 'X2Bwvr8zSjN8'),
+('mmacfie8@squidoo.com', 'Moise', 'MacFie', '1 Pleasure Junction', 22779133, '20/07/2007', 'TXVCt7e1n'),
+('escouse9@canalblog.com', 'Elsy', 'Scouse', '23954 Continental Court', 62853900, '04/12/2006', 'RNqpSgZ0'),
+('ishevlina@hibu.com', 'Isabella', 'Shevlin', '8525 Badeau Parkway', 82275799, '16/10/2019', 'uhWYE7uuJeU'),
+('aelsbyb@patch.com','Atlante', 'Elsby', '1196 Golf Center', 62928794, '09/10/2016', 'Tb0pkl'),
+('msambedgec@google.com', 'Meade', 'Sambedge', '2 Hintze Junction', 33187052, '03/02/2010', 'SiOYemX6'),
+('mpiscopellod@mysql.com', 'Mallory', 'Piscopello', '825 John Wall Street', 95347751, '06/06/2002', '6MjyT5t'),
+('dwhapling@cyberchimp.com', 'Dolorita', 'Whaplington', '95820 Anniversary Avenue', 49513636, '13/10/2002', 'fDXFBFESr'),
+('hbarribalf@paypal.com', 'Hilary', 'Barribal', '54 Marquette Street', 16696538, '17/07/2006', 'gE9dStg'),
+('icreeseg@google.co.jp', 'Ives', 'Creese', '832 Basil Place', 78653942, '21/05/2008', 'LgU2VIm8'),
+('hhouldh@google.com.hk', 'Herrick', 'Hould', '144 Northland Terrace', 60975453, '19/08/2006',	'aY6QmD2h6y'),
+('bducei@bandcamp.com', 'Brett', 'Duce', '72 Hermina Alley', 95858669, '09/09/2008', '0TwBaG8pZWjT');
