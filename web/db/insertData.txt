@@ -1,0 +1,7 @@
+// Use the following script to insert data into tables
+// Change corresponding TABLE NAME and FIELDS
+// 'Bruce Wayne' is the system administrator for IoTBay
+
+INSERT INTO CUSTOMER (EMAILADDRESS, FIRSTNAME, LASTNAME, ADDRESS, PHONENUMBER, DOB, PASSWORD)
+VALUES
+('brucewayne@gcpd.com', 'Bruce', 'Wayne', 'Wayne Manor', 12345678, '10/10/2020', 'darknight');
