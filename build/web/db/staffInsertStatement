@@ -1,0 +1,22 @@
+INSERT INTO STAFF (FIRSTNAME, LASTNAME, PASSWORD, WORKPHONE)
+VALUES
+('Cornelius', 'Pembry', 'JKQ15nCb6e4', 26924892),
+('Isidore', 'Tombling', '6JmH4MGJra', 95648907),
+('Arty', 'Shearsby', 'ZbW2iioqh', 67533288),
+('Rhianna', 'Fulks', 'vistBPTXg', 24959087),
+('Janine', 'Eivers', 'aMyHnLWxC4IR', 2922171),
+('Carlos', 'Dawltrey', 'zqyqAJ1', 52891373),
+('Darlene', 'Olensby', 'U1MNJg', 53877064),
+('Mort', 'Mordey', 'TDEqHZ74Z0od', 58370307),
+('Shepard', 'Platt', '3aWdXEc1g', 10749584),
+('Zedekiah', 'McKerron', 'sZtdc92gw', 86232451),
+('Pavla', 'Arnoult', '05H8tcOXHlfM', 68992867),
+('Ronni', 'Stiggles', 'zTj808x', 91330835),
+('Grantham', 'OMullally', '1aH5HP', 52276764),
+('Averell', 'Balassi', '9s58ZJ', 48262171),
+('Danny', 'Bozward', 'WcyFZjesKbg', 94144895),
+('Bradley', 'Potell', 'mNTGRV', 17251161),
+('Stace', 'Levene', 'jnf4NH', 15720994),
+('Adel', 'Murfill', 'Hzx8uCzzDmGn', 41916067),
+('Beryl', 'Newbery', '1VV8XHzj4Viq', 25939154),
+('Rivalee', 'Flanne', 'vacii2Ux0Sm', 13123918);
