@@ -26,7 +26,7 @@
                         </form>
                     </div>
                     <a href="index.jsp" class="backButton">Back</a>
-                    <a href="adminDashboard.jsp">Admin Dashboard</a>
+                    <a href="adminPages/dashboard.jsp">Admin Dashboard</a>
                 </form>
 
             </div>
