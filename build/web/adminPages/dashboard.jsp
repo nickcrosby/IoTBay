@@ -20,7 +20,7 @@
             <a href="update.jsp" >Update</a>
             <a href="delete.jsp" >Delete</a><br><br>
             
-            <a href="index.jsp" class="backButton">Back</a>
+            <a href="../index.jsp" class="backButton">Back</a>
             <a href="../logout.jsp">Logout</a>
         </div>
     </body>
