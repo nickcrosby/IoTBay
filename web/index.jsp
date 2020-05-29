@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Landing</title>
+        <title>IoTBay</title>
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
