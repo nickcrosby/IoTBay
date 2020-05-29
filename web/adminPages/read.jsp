@@ -14,6 +14,10 @@
             <h1>Administrative Dashboard</h1>
             <p>View and filter existing staff member records</p><br>
             
+            <p>View all staff records</p><br>
+            <button>Generate</button>
+            <p>Search for a specific staff member</p>
+            
             <a href="dashboard.jsp" class="backButton">Back</a>
             <a href="../logout.jsp">Logout</a>
         </div>
