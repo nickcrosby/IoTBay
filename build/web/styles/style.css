@@ -86,3 +86,7 @@ input[type="submit"] {
     border-radius: 0.5em;
     font-size: 0.9em;
 }
+
+.staffDelete {
+    display: inline-block;
+}
