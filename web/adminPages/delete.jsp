@@ -13,7 +13,7 @@
         <div class="mainContainer">
             <h1>Administrative Dashboard</h1>
             <p>Delete existing staff member records</p><br>
-            
+    
             <a href="dashboard.jsp" class="backButton">Back</a>
             <a href="../logout.jsp">Logout</a>
         </div>
