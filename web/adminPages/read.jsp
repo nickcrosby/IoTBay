@@ -23,6 +23,7 @@
         <div class="mainContainer">
             <h1>Administrative Dashboard</h1>
             <p>View and filter existing staff member records</p><br>
+            <p>*consider adding a table to display data</p>
         </div>
     </body>
 </html>
