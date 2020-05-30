@@ -10,11 +10,31 @@ body {
 
 .bgimage {
     background-image: url("../images/newplexus.jpg");
-    height: 40%;
+    height: 30%;
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(60%);
     background-position: center;
+}
+
+.navbarElements {
+    background-color: #01030f;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.navbarElements li {
+    display: inline;
+    padding: 1%;
+    background-color: #01030f;
+}
+
+.navbarElements li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 a {
@@ -85,8 +105,4 @@ input[type="submit"] {
     display: inline-block;
     border-radius: 0.5em;
     font-size: 0.9em;
-}
-
-.staffDelete {
-    display: inline-block;
 }

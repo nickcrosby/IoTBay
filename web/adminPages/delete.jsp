@@ -10,49 +10,19 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
+        <!--Navigation bar-->
+        <div class="navbar">
+            <ul class="navbarElements">
+                <li><a href="../index.jsp">Home</a></li>
+                <li><a href="../catalogue.jsp">Catalogue</a></li>
+                <li><a href="dashboard.jsp">Back</a></li>
+                <li><a href="../logout.jsp">Logout</a></li>
+            </ul>
+        </div>
+        <!--Main titles-->
         <div class="mainContainer">
             <h1>Administrative Dashboard</h1>
-            <p>Delete existing staff member records</p><br>.
-
-            <div class="staffDelete"> 
-                <!--Delete by FIRST name-->
-                <section>
-                    <p>Delete by: First Name</p><br>
-                    <form method="post" action="">
-                        <table class="mainContainer">
-                            <tr><td>First Name</td><td><input type="text" placeholder="First Name" name="fname"></td></tr>          
-                            <!--Delete staff member-->
-                            <tr><td></td><td><input type="submit" value="Delete"></td></tr>     
-                        </table>
-                    </form>
-                </section><br>
-
-                <!--Delete by LAST name-->
-                <section>
-                    <p>Delete by: Last Name</p><br>
-                    <form method="post" action="">
-                        <table class="mainContainer">
-                            <tr><td>Last Name</td><td><input type="text" placeholder="Last Name" name="lname"></td></tr>          
-                            <!--Delete staff member-->
-                            <tr><td></td><td><input type="submit" value="Delete"></td></tr>     
-                        </table>
-                    </form>
-                </section><br>
-
-                <!--Delete by FIRST and LAST name-->
-                <section>
-                    <p>Delete by: First Name <strong>AND</strong> Last Name</p><br>
-                    <form method="post" action="">
-                        <table class="mainContainer">
-                            <tr><td>First/Last Name</td><td><input type="text" placeholder="First and Last Name" name="flname"></td></tr>          
-                            <!--Delete staff member-->
-                            <tr><td></td><td><input type="submit" value="Delete"></td></tr>     
-                        </table>
-                    </form>
-                </section><br>          
-            </div>
-            <a href="dashboard.jsp" class="backButton">Back</a>
-            <a href="../logout.jsp">Logout</a>
+            <p>Delete existing staff member records</p><br>
         </div>
     </body>
 </html>

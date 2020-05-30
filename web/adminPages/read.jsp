@@ -10,16 +10,19 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
+        <!--Navigation bar-->
+        <div class="navbar">
+            <ul class="navbarElements">
+                <li><a href="../index.jsp">Home</a></li>
+                <li><a href="../catalogue.jsp">Catalogue</a></li>
+                <li><a href="dashboard.jsp">Back</a></li>
+                <li><a href="../logout.jsp">Logout</a></li>
+            </ul>
+        </div>
+        <!--Main titles-->
         <div class="mainContainer">
             <h1>Administrative Dashboard</h1>
             <p>View and filter existing staff member records</p><br>
-            
-            <p>View all staff records</p><br>
-            <button>Generate</button>
-            <p>Search for a specific staff member</p>
-            
-            <a href="dashboard.jsp" class="backButton">Back</a>
-            <a href="../logout.jsp">Logout</a>
         </div>
     </body>
 </html>
