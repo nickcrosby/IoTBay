@@ -19,8 +19,10 @@ public class DBManager {
     public Customer findUser(String email, String password) throws SQLException {
         //setup the select sql query string       
         String fetch = "select * from APP.Customer where = '" + email + "' and PASSWORD=" + password + "'";
+        
         //execute this query using the statement field 
         ResultSet rs = st.executeQuery(fetch);
+
         //add the results to a ResultSet       
         while (rs.next()) {
             String customerEmail = rs.getString(2);
@@ -35,8 +37,8 @@ public class DBManager {
     }
 
 //Add a user-data into the database   
-    public void addUser(String email, String name, String password, String gender, String favcol) throws SQLException {                   //code for add-operation       
-        st.executeUpdate("sql query");
+    public void addUser(String email, String name, String password, String gender, String favcol) throws SQLException {//code for add-operation       
+        st.executeUpdate("INSERT INTO Customer.Staff" + "VALUES ('" + "'), ");
     }
 
 //update a user details in the database   
