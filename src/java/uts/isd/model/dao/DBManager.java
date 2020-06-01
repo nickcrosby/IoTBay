@@ -16,10 +16,10 @@ public class DBManager {
     }
 
 //Find user by email and password in the database   
-    public Customer findUser(String email, String password) throws SQLException {
+    public Customer findUser(String firstName, String lastName, String email, String password, String workPhone) throws SQLException {
         //setup the select sql query string       
-        String fetch = "select * from APP.Customer where = '" + email + "' and PASSWORD=" + password + "'";
-        
+        String fetch = "select * from IOTCUSTOMER.Staff where FirstName = '" + firstName + "'LastName = '" + lastName + "'email= '" + email + "'Password = '" + password + "'workPhone= '" + workPhone;
+
         //execute this query using the statement field 
         ResultSet rs = st.executeQuery(fetch);
 
@@ -28,8 +28,8 @@ public class DBManager {
             String customerEmail = rs.getString(2);
             String customerPass = rs.getString(3);
             if (customerEmail.equals(email) && customerPass.equals(password)) {
-                String customerName = rs.getString(1);
-                String customerDOB = rs.getString(4);
+                String customerFirstName = rs.getString(1);
+                String customerLastName = rs.getString(4);
             }
         }
         //search the ResultSet for a user using the parameters               
