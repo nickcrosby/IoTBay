@@ -23,6 +23,7 @@
         <div class="mainContainer">
             <h1>Administrative Dashboard</h1>
             <p>Staff Management Console</p><br>
+            <p>*fix the navigation buttons</p>
             <!--CRUD management pages-->
             <a href="create.jsp" >Create Records</a>
             <a href="read.jsp" >Read Records</a>
