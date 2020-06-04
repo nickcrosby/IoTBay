@@ -10,6 +10,13 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
+        <!--Navigation bar-->
+        <div class="navbar">
+            <ul class="navbarElements">
+                <li><a href="adminPages/dashboard.jsp">Administrative Dashboard</a></li>
+                <li><a href="index.jsp">Home</a></li>
+            </ul>
+        </div>
         <section>
             <!--Login form-->
             <div class="mainContainer">
@@ -25,9 +32,7 @@
                             </table>
                         </form>
                     </div>
-                    <a href="index.jsp" class="backButton">Back</a>
                 </form>
-
             </div>
         </section>
     </body>

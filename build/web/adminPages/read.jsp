@@ -3,8 +3,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Catalogue</title>
-        <link rel="stylesheet" href="styles/style.css">
+        <title>Read</title>
+        <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body>
         <!--Main site image-->
@@ -13,14 +13,16 @@
         <!--Navigation bar-->
         <div class="navbar">
             <ul class="navbarElements">
-                <li><a href="index.jsp">Home</a></li>
-                <li><a href="logout.jsp">Logout</a></li>
+                <li><a href="../index.jsp">Home</a></li>
+                <li><a href="dashboard.jsp">Back</a></li>
+                <li><a href="../logout.jsp">Logout</a></li>
             </ul>
         </div>
+        <!--Main titles-->
         <div class="mainContainer">
-            <h1>Device Catalogue</h1>
-            <p>Error 404: Content not found. Please come back later.</p>
-            <!--Logout and Back navigation-->
+            <h1>Administrative Dashboard</h1>
+            <p>View and filter existing staff member records</p><br>
+            <p>*consider adding a table to display data</p>
         </div>
     </body>
 </html>

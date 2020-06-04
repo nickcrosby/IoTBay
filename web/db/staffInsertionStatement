@@ -1,0 +1,20 @@
+INSERT INTO STAFF (EMAIL, FIRSTNAME, LASTNAME, PASSWORD, WORKPHONE)
+VALUES
+('vakena@outlook.com', 'Vincent', 'Akena', 'isd2020', 123456789),
+('smantripp1@outlook.com', 'Isidore', 'Tombling', '6JmH4MGJra', 95648907),
+('leisikowitch2@outlook.com', 'Arty', 'Shearsby', 'ZbW2iioqh', 67533288),
+('rround3@outlook.com', 'Rhianna', 'Fulks', 'vistBPTXg', 24959087),
+('wbussel4@outlook.com', 'Janine', 'Eivers', 'aMyHnLWxC4IR', 2922171),
+('ssnaden5@outlook.com', 'Carlos', 'Dawltrey', 'zqyqAJ1', 52891373),
+('eraiment7@gmail.com', 'Darlene', 'Olensby', 'U1MNJg', 53877064),
+('dfellis8@gmail.com', 'Mort', 'Mordey', 'TDEqHZ74Z0od', 58370307),
+('cswales9@gmail.com', 'Shepard', 'Platt', '3aWdXEc1g', 10749584),
+('kosheeb@gmail.com', 'Zedekiah', 'McKerron', 'sZtdc92gw', 86232451),
+('mgossartc@gmail.com', 'Pavla', 'Arnoult', '05H8tcOXHlfM', 68992867),
+('chamblynd@yahoo.com', 'Ronni', 'Stiggles', 'zTj808x', 91330835),
+('kcronine@yahoo.com', 'Grantham', 'OMullally', '1aH5HP', 52276764),
+('rmernerf@yahoo.com', 'Averell', 'Balassi', '9s58ZJ', 48262171),
+('nparminterg@yahoo.com', 'Danny', 'Bozward', 'WcyFZjesKbg', 94144895),
+('braulstoneh@apple.com', 'Bradley', 'Potell', 'mNTGRV', 17251161),
+('fchethami@apple.com', 'Stace', 'Levene', 'jnf4NH', 15720994),
+('cizzattj@apple.com', 'Adel', 'Murfill', 'Hzx8uCzzDmGn', 41916067);
