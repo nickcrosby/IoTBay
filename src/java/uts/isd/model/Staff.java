@@ -1,6 +1,6 @@
 package uts.isd.model;
 
-public class Customer {
+public class Staff {
 
     //Registration data fields
     private String fname;
@@ -12,7 +12,7 @@ public class Customer {
     private String phone;
 
     //Initialise constructor with user fields
-    public Customer(String fname, String lname, String password, String dob, String email, String address, String phone) {
+    public Staff(String fname, String lname, String password, String dob, String email, String address, String phone) {
         this.fname = fname;
         this.lname = lname;
         this.password = password;
@@ -20,6 +20,14 @@ public class Customer {
         this.email = email;
         this.address = address;
         this.phone = phone;
+    }
+
+    public Staff(String email, String firstname, String lastname, String password, String workphone) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Staff(String staffFirstName, String staffLastName, String password) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getFname() {

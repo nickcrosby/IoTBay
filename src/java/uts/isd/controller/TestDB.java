@@ -40,7 +40,7 @@ public class TestDB {
 
             String favcol = in.nextLine();
 
-            db.addUser(email, name, password, gender, favcol);
+            db.addStaff(email, name, password, gender, favcol);
 
             System.out.println("User is added to the database.");
 
