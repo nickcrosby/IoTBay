@@ -10,21 +10,17 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
-
         <!--Navigation bar-->
         <div class="navbar">
             <ul class="navbarElements">
                 <a href="index.jsp">Home</a>
             </ul>
         </div>
-
+        <!--Logout message-->
         <section>
             <div class="mainContainer">
                 <h1>Logout</h1><br>
                 <p>You have successfully logged out.</p><br>
-            </div>
-            <div class="mainContainer">
-
             </div>
         </section>
 

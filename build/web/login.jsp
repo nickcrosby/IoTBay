@@ -10,7 +10,6 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
-
         <!--Navigation bar-->
         <div class="navbar">
             <ul class="navbarElements">
@@ -18,7 +17,6 @@
                 <li><a href="index.jsp">Home</a></li>
             </ul>
         </div>
-
         <section>
             <!--Login form-->
             <div class="mainContainer">
@@ -35,7 +33,6 @@
                         </form>
                     </div>
                 </form>
-
             </div>
         </section>
     </body>

@@ -10,7 +10,6 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
-
         <!--Navigation bar-->
         <div class="navbar">
             <ul class="navbarElements">
@@ -18,7 +17,6 @@
                 <li><a href="logout.jsp">Logout</a></li>
             </ul>
         </div>
-
         <div class="mainContainer">
             <h1>Device Catalogue</h1>
             <p>Error 404: Content not found. Please come back later.</p>
