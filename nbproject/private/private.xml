@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/uts/isd/model/dao/DBConnector.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/read.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/styles/style.css</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/iotbay/controller/StaffManagementController.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/create.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/uts/isd/model/dao/DBManager.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/dashboard.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/uts/isd/model/dao/DB.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/update.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/delete.jsp</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
