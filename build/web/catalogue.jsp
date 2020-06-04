@@ -11,10 +11,18 @@
         <div class="bgimage">
         </div>
 
-        <h1>Device Catalogue</h1>
-        <!--Logout and Back navigation-->
+        <!--Navigation bar-->
+        <div class="navbar">
+            <ul class="navbarElements">
+                <li><a href="index.jsp">Home</a></li>
+                <li><a href="logout.jsp">Logout</a></li>
+            </ul>
+        </div>
+
         <div class="mainContainer">
-            <a href="index.jsp">Back</a>  
+            <h1>Device Catalogue</h1>
+            <p>Error 404: Content not found. Please come back later.</p>
+            <!--Logout and Back navigation-->
         </div>
     </body>
 </html>

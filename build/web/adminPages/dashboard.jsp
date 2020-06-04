@@ -14,8 +14,7 @@
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="../index.jsp">Home</a></li>
-                <li><a href="../catalogue.jsp">Catalogue</a></li>
-                <li><a href="../index.jsp">Back</a></li>
+                <li><a href="../login.jsp">Back</a></li>
                 <li><a href="../logout.jsp">Logout</a></li>
             </ul>
         </div>
@@ -23,7 +22,6 @@
         <div class="mainContainer">
             <h1>Administrative Dashboard</h1>
             <p>Staff Management Console</p><br>
-            <p>*fix the navigation buttons</p>
             <!--CRUD management pages-->
             <a href="create.jsp" >Create Records</a>
             <a href="read.jsp" >Read Records</a>

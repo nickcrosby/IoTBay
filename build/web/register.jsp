@@ -10,6 +10,14 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
+
+        <!--Navigation bar-->
+        <div class="navbar">
+            <ul class="navbarElements">
+                <li><a href="index.jsp">Home</a></li>
+            </ul>
+        </div>
+
         <section class="mainContainer">
             <h1>Registration</h1>
             <p>Create a new account</p><br>
@@ -27,7 +35,6 @@
                     <tr><td></td><td><input type="submit" value="Register"></td></tr>     
                 </table>
             </form>
-            <a href="index.jsp" class="backButton">Back</a>
         </section>
     </body>
 </html>

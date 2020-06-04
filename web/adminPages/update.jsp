@@ -14,7 +14,6 @@
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="../index.jsp">Home</a></li>
-                <li><a href="../catalogue.jsp">Catalogue</a></li>
                 <li><a href="dashboard.jsp">Back</a></li>
                 <li><a href="../logout.jsp">Logout</a></li>
             </ul>
