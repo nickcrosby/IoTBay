@@ -19,7 +19,7 @@ public class DBManager {
 //Find user by email and password in the database   
     public Staff findStaff(String email, String password) throws SQLException {
         //setup the select sql query string       
-        String fetch = "select * from IOTCUSTOMER.Staff where EMAIL = '" + email + "' and PASSWORD = '" + password + "'";
+        String fetch = "select * from ADMINISTRATOR.Staff where EMAIL = '" + email + "' and PASSWORD = '" + password + "'";
 
         //execute this query using the statement field 
         ResultSet rs = st.executeQuery(fetch);
@@ -40,19 +40,19 @@ public class DBManager {
 
 //Add a user-data into the database   
     public void addStaff(String email, String firstname, String lastname, String password, String workphone) throws SQLException {//code for add-operation       
-        st.executeUpdate("INSERT INTO IOTCustomer.Staff" + "VALUES ('" + email + "'), '" + firstname + "', '" + lastname + "', '" + password + "' , '" + workphone + "')");
+        st.executeUpdate("INSERT INTO ADMINISTRATOR.Staff " + "VALUES ('" + email + "', '" + firstname + "', '" + lastname + "', '" + password + "' , '" + workphone + "'");
     }
 
 //update a user details in the database   
     public void updateStaff(String email, String firstname, String lastname, String password, String workphone) throws SQLException {
         //code for update-operation   
-        st.executeUpdate("UPDATE IOTCustomer.Staff SET NAME = '" + email + "', FIRSTNAME = '" + firstname + "', LASTNAME = '" + lastname + "', PASSWORD = '" + password + "', WORKPHONE = '" + workphone + "'");
+        st.executeUpdate("UPDATE ADMINISTRATOR.Staff SET NAME = '" + email + "', FIRSTNAME = '" + firstname + "', LASTNAME = '" + lastname + "', PASSWORD = '" + password + "', WORKPHONE = '" + workphone + "'");
     }
 
 //delete a user from the database   
     public void deleteStaff(String firstname) throws SQLException {
         //code for delete-operation   
-        st.executeUpdate("DELETE FROM IOTCustomer.Staff WHERE FIRSTNAME = '" + firstname + "'");
+        st.executeUpdate("DELETE FROM ADMINISTRATOR.Staff WHERE FIRSTNAME = '" + firstname + "'");
     }
 
     public ArrayList<Staff> fetchStaff() throws SQLException {
@@ -72,7 +72,7 @@ public class DBManager {
     }
 
     public boolean checkStaff(String email, String password) throws SQLException {
-        String fetch = "select * from IOTCUSTOMER.Staff where EMAIL = '" + email + "' and PASSWORD = '" + password + "'";
+        String fetch = "select * from ADMINISTRATOR.Staff where EMAIL = '" + email + "' and PASSWORD = '" + password + "'";
         ResultSet rs = st.executeQuery(fetch);
 
         while (rs.next()) {

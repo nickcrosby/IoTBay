@@ -34,7 +34,7 @@ public class TestDB {
     }
 
     private char readChoice() {
-        System.out.print("Operation CRUDS or * to exit: ");
+        System.out.print("Operations: (C/R/U/D/S/*): ");
         return in.nextLine().charAt(0);
     }
 
@@ -55,8 +55,11 @@ public class TestDB {
                 case 'D':
                     testDelete();
                     break;
+                case 'S':
+                    showAll();
+                    break;
                 default:
-                    System.out.println("Command not recognised, please try again.");
+                    System.out.println("Command not recognised, please try again. ");
             }
         }
     }
@@ -97,7 +100,7 @@ public class TestDB {
         if (staff != null) {
             System.out.println("Staff " + staff.getFname() + "exits in the database");
         } else {
-            System.out.println("Staff member does not exist");
+            System.out.println("Staff member does not exist. ");
         }
     }
 
@@ -117,7 +120,7 @@ public class TestDB {
                 String workphone = in.nextLine();
                 db.updateStaff(email, firstname, firstname, password, workphone);
             } else {
-                System.out.print("Staff member does not exist");
+                System.out.print("Staff member does not exist. ");
             }
         } catch (SQLException ex) {
             Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
@@ -135,7 +138,7 @@ public class TestDB {
             if (db.checkStaff(email, password)) {
                 db.deleteStaff(email);
             } else {
-                System.out.print("Staff member does not exist");
+                System.out.print("Staff member does not exist. ");
             }
         } catch (SQLException ex) {
             Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
@@ -154,5 +157,4 @@ public class TestDB {
             Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
 }
