@@ -9,8 +9,52 @@ xml version="1.0" encoding="UTF-8"?>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>ConnServlet </servlet-name>
-        <url-pattern>/ConnServlet </url-pattern>
+        <servlet-name>ConnServlet</servlet-name>
+        <url-pattern>/ConnServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateController</servlet-name>
+        <servlet-class>uts.isd.controller.CreateController</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateController</servlet-name>
+        <url-pattern>/CreateController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadController</servlet-name>
+        <servlet-class>uts.isd.controller.ReadController</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReadController</servlet-name>
+        <url-pattern>/ReadController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateController</servlet-name>
+        <servlet-class>uts.isd.controller.UpdateController</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateController</servlet-name>
+        <url-pattern>/UpdateController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteController</servlet-name>
+        <servlet-class>uts.isd.controller.DeleteController</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteController</servlet-name>
+        <url-pattern>/DeleteController</url-pattern>
     </servlet-mapping>
 
     <session-config>
