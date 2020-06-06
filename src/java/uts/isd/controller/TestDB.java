@@ -81,7 +81,7 @@ public class TestDB {
         String workphone = in.nextLine();
 
         try {
-            db.addStaff(email, firstname, lastname, password, workphone);
+            db.addStaff(email, firstname, lastname, password);
         } catch (SQLException ex) {
             Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -110,15 +110,16 @@ public class TestDB {
 
         System.out.println("Password: ");
         String password = in.nextLine();
+        
+        System.out.println("Last Name: ");
+        String lastname = in.nextLine();
 
         try {
             if (db.checkStaff(email, password)) {
                 System.out.println("First Name: ");
                 String firstname = in.nextLine();
 
-                System.out.println("Workphone: ");
-                String workphone = in.nextLine();
-                db.updateStaff(email, firstname, firstname, password, workphone);
+                db.updateStaff(email, firstname, lastname, password);
             } else {
                 System.out.print("Staff member does not exist. ");
             }

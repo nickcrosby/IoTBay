@@ -12,22 +12,11 @@ public class Staff {
     private String phone;
 
     //Initialise constructor with user fields
-    public Staff(String fname, String lname, String password, String dob, String email, String address, String phone) {
+    public Staff(String fname, String lname, String password, String email) {
         this.fname = fname;
         this.lname = lname;
         this.password = password;
-        this.dob = dob;
         this.email = email;
-        this.address = address;
-        this.phone = phone;
-    }
-
-    public Staff(String email, String firstname, String lastname, String password, String workphone) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Staff(String staffFirstName, String staffLastName, String password) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getFname() {
@@ -54,35 +43,11 @@ public class Staff {
         this.password = password;
     }
 
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 }

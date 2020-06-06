@@ -23,15 +23,16 @@ public class DBManager {
 
         //execute this query using the statement field 
         ResultSet rs = st.executeQuery(fetch);
-
+        //String fname, String lname, String password, String dob, String email, String address, String phone
         //add the results to a ResultSet       
         while (rs.next()) {
             String staffEmail = rs.getString(1);
             String staffPassword = rs.getString(4);
+            
             if (staffEmail.equals(email) && staffPassword.equals(password)) {
                 String staffFirstName = rs.getString(2);
                 String staffLastName = rs.getString(3);
-                return new Staff(staffFirstName, staffLastName, password);
+                return new Staff(email, staffFirstName, staffLastName, password);
             }
         }
         //search the ResultSet for a user using the parameters               
@@ -39,14 +40,14 @@ public class DBManager {
     }
 
 //Add a user-data into the database   
-    public void addStaff(String email, String firstname, String lastname, String password, String workphone) throws SQLException {//code for add-operation       
-        st.executeUpdate("INSERT INTO ADMINISTRATOR.Staff " + "VALUES ('" + email + "', '" + firstname + "', '" + lastname + "', '" + password + "' , '" + workphone + "'");
+    public void addStaff(String email, String firstname, String lastname, String password) throws SQLException {//code for add-operation       
+        st.executeUpdate("INSERT INTO ADMINISTRATOR.Staff " + "VALUES ('" + email + "', '" + firstname + "', '" + lastname + "', '" + password + "')");
     }
 
 //update a user details in the database   
-    public void updateStaff(String email, String firstname, String lastname, String password, String workphone) throws SQLException {
+    public void updateStaff(String email, String firstname, String lastname, String password) throws SQLException {
         //code for update-operation   
-        st.executeUpdate("UPDATE ADMINISTRATOR.Staff SET NAME = '" + email + "', FIRSTNAME = '" + firstname + "', LASTNAME = '" + lastname + "', PASSWORD = '" + password + "', WORKPHONE = '" + workphone + "'");
+        st.executeUpdate("UPDATE ADMINISTRATOR.Staff SET NAME = '" + email + "', FIRSTNAME = '" + firstname + "', LASTNAME = '" + lastname + "', PASSWORD = '" + password + "'");
     }
 
 //delete a user from the database   
@@ -65,8 +66,7 @@ public class DBManager {
             String firstname = rs.getString(2);
             String lastname = rs.getString(3);
             String password = rs.getString(4);
-            String workphone = rs.getString(5);
-            temp.add(new Staff(email, firstname, lastname, password, workphone));
+            temp.add(new Staff(email, firstname, lastname, password));
         }
         return temp;
     }
