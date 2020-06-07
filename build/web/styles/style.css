@@ -48,6 +48,17 @@ a {
     font-size: 1.2em;
 } 
 
+.confirmButtons {
+    background-image: linear-gradient(to right, #1a129f , #5248e6);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+}
+
 .mainContainer {
     position: relative;
     text-align: center;

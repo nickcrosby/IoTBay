@@ -36,14 +36,14 @@ xml version="1.0" encoding="UTF-8"?>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>UpdateController</servlet-name>
-        <servlet-class>uts.isd.controller.UpdateController</servlet-class>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>uts.isd.controller.UpdateServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>UpdateController</servlet-name>
-        <url-pattern>/UpdateController</url-pattern>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet</url-pattern>
     </servlet-mapping>
 
     <servlet>

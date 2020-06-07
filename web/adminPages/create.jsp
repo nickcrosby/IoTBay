@@ -25,14 +25,11 @@
             <section class="mainContainer">
                 <!--Create a new user-->
                 <!--Insert new staff members into database-->
-                <form method="post" action="">
+                <form method="post" action="CreateServlet">
                     <table class="mainContainer">
+                        <tr><td>Email</td><td><input type="email" placeholder="Email" name="email"></td></tr>
                         <tr><td>First Name</td><td><input type="text" placeholder="First Name" name="fname"></td></tr> 
                         <tr><td>Last Name</td><td><input type="text" placeholder="Last Name" name="lname"></td></tr>  
-                        <tr><td>Phone</td><td><input type="text" placeholder="Phone Number" name="phone"></td></tr>
-                        <tr><td>Email</td><td><input type="email" placeholder="Email" name="email"></td></tr>
-                        <tr><td>Address</td><td><input type="text" placeholder="Address" name="address"></td></tr> 
-                        <tr><td>D.O.B</td><td><input type="date" placeholder="dob" name="dob"></td></tr>
                         <tr><td>Password</td><td><input type="password" placeholder="Default Password" name="password"></td></tr>            
                         <!--Create record-->
                         <tr><td></td><td><input type="submit" value="Create"></td></tr>     
@@ -40,5 +37,6 @@
                 </form>
             </section>
         </div>
+        <jsp:include page ="/ConnServlet" flush="true"/>
     </body>
 </html>

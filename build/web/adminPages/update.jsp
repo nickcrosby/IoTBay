@@ -1,3 +1,4 @@
+<%@page import="uts.isd.model.Staff"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -7,6 +8,17 @@
         <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body>
+        <%
+            Staff staff = null;
+            if (session.getAttribute("staff") != null) {
+                staff = (Staff) session.getAttribute("staff");
+            }
+            String updated = null;
+            if (session.getAttribute("updated") != null) {
+                updated = (String) session.getAttribute("updated");
+            }
+            staff = new Staff("", "", "", "");
+        %>
         <!--Main site image-->
         <div class="bgimage">
         </div>
@@ -21,24 +33,22 @@
         <!--Main titles-->
         <div class="mainContainer">
             <h1>Administrative Dashboard</h1>
-            <p>Update existing staff member records</p><br>
+            <p>Update existing staff member records: <span class="message"> <%=(updated != null ? updated : "")%> </span></p><br>
             <section class="mainContainer">
                 <!--Create a new user-->
                 <!--Update staff information-->
-                <form method="post" action="">
+                <form method="post" action="CreateServlet">
                     <table class="mainContainer">
-                        <tr><td>First Name</td><td><input type="text" placeholder="First Name" name="fname"></td></tr> 
-                        <tr><td>Last Name</td><td><input type="text" placeholder="Last Name" name="lname"></td></tr>  
-                        <tr><td>Phone</td><td><input type="text" placeholder="Phone Number" name="phone"></td></tr>
-                        <tr><td>Email</td><td><input type="email" placeholder="Email" name="email"></td></tr>
-                        <tr><td>Address</td><td><input type="text" placeholder="Address" name="address"></td></tr> 
-                        <tr><td>D.O.B</td><td><input type="date" placeholder="dob" name="dob"></td></tr>
-                        <tr><td>Password</td><td><input type="password" placeholder="Default Password" name="password"></td></tr>            
-                        <!--Update record-->
+                        <tr><td>Email</td><input type="text" name="email" value="${staff.email}" placeholder="Email"/></td></td></tr>
+                        <tr><td>First Name</td><td><%=staff.getFname()%><input type="text" name="firstname" value="<%=staff.getFname()%>" placeholder="First Name"/></td></td></tr> 
+                        <tr><td>Last Name</td><td> <%=staff.getLname()%><input type="text" name="lastname" value="<%=staff.getLname()%>" placeholder="Last Name"/></td>  </td></tr>  
+                        <tr><td>Password</td><td> <%=staff.getPassword()%><input type="password" name="password" value="<%=staff.getPassword()%>" placeholder="Password"/></td></td></tr>            
+                        <!--Create record-->
                         <tr><td></td><td><input type="submit" value="Update"></td></tr>     
                     </table>
                 </form>
             </section>
         </div>
+        <jsp:include page ="/ConnServlet" flush="true"/>
     </body>
 </html>
