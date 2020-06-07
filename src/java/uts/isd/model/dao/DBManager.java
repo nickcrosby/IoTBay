@@ -28,7 +28,7 @@ public class DBManager {
         while (rs.next()) {
             String staffEmail = rs.getString(1);
             String staffPassword = rs.getString(4);
-            
+
             if (staffEmail.equals(email) && staffPassword.equals(password)) {
                 String staffFirstName = rs.getString(2);
                 String staffLastName = rs.getString(3);
@@ -47,13 +47,13 @@ public class DBManager {
 //update a user details in the database   
     public void updateStaff(String email, String firstname, String lastname, String password) throws SQLException {
         //code for update-operation   
-        st.executeUpdate("UPDATE ADMINISTRATOR.Staff SET NAME = '" + email + "', FIRSTNAME = '" + firstname + "', LASTNAME = '" + lastname + "', PASSWORD = '" + password + "'");
+        st.executeUpdate("UPDATE ADMINISTRATOR.Staff SET FIRSTNAME = '" + firstname + "', LASTNAME = '" + lastname + "', PASSWORD = '" + password + "' WHERE EMAIL='" + email + "'");
     }
 
 //delete a user from the database   
-    public void deleteStaff(String firstname) throws SQLException {
+    public void deleteStaff(String email, String password) throws SQLException {
         //code for delete-operation   
-        st.executeUpdate("DELETE FROM ADMINISTRATOR.Staff WHERE FIRSTNAME = '" + firstname + "'");
+        st.executeUpdate("DELETE FROM ADMINISTRATOR.STAFF WHERE EMAIL = '" + email + "' AND PASSWORD = '" + password + "'");
     }
 
     public ArrayList<Staff> fetchStaff() throws SQLException {
@@ -76,8 +76,8 @@ public class DBManager {
         ResultSet rs = st.executeQuery(fetch);
 
         while (rs.next()) {
-            String staffEmail = rs.getString(2);
-            String staffPassword = rs.getString(3);
+            String staffEmail = rs.getString(1);
+            String staffPassword = rs.getString(4);
             if (staffEmail.equals(email) && staffPassword.equals(password)) {
                 return true;
             }

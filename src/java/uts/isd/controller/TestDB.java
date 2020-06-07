@@ -110,15 +110,15 @@ public class TestDB {
 
         System.out.println("Password: ");
         String password = in.nextLine();
-        
-        System.out.println("Last Name: ");
-        String lastname = in.nextLine();
 
         try {
             if (db.checkStaff(email, password)) {
                 System.out.println("First Name: ");
                 String firstname = in.nextLine();
-
+                
+                System.out.println("Last Name: ");
+                String lastname = in.nextLine();
+                
                 db.updateStaff(email, firstname, lastname, password);
             } else {
                 System.out.print("Staff member does not exist. ");
@@ -137,7 +137,7 @@ public class TestDB {
 
         try {
             if (db.checkStaff(email, password)) {
-                db.deleteStaff(email);
+                db.deleteStaff(email, password);
             } else {
                 System.out.print("Staff member does not exist. ");
             }
