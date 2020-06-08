@@ -5,6 +5,17 @@
  */
 package uts.isd.model.dao;
 
+
+
+import uts.isd.model.Orders;
+import java.sql.*;
+
+/* 
+* DBManager is the primary DAO class to interact with the database. 
+* Complete the existing methods of this classes to perform CRUD operations with the db.
+*/
+
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,6 +27,7 @@ import uts.isd.model.Orders;
  *
  * @author eduardomoraza
  */
+
 public class DBManager {
 
 private Statement st;
@@ -25,6 +37,9 @@ public DBManager(Connection conn) throws SQLException {
 }
 
 //Find user by email and password in the database   
+
+ 
+
 public Orders findOrders(String orderID, String date) throws SQLException {       
     String fetch = "select * from IOTUSER.Order_T where ORDERID = '" + orderID + "' and DATE ='" + date + "'";
    ResultSet rs = st.executeQuery(fetch);
@@ -48,15 +63,23 @@ public Orders findOrders(String orderID, String date) throws SQLException {
 public void addOrders(String orderID, String orderStatus, String totalCost, String productID, String quantity, String date) throws SQLException {                   //code for add-operation       
   st.executeUpdate("INSERT INTO IOTUSER.Order_t " + "VALUES ('" + orderID + "', '" + orderStatus + "', '" + totalCost + "', '" + productID + "', '" + quantity + "', '" + date + "')");   
 
+
 }
 
 //update a user details in the database   
+
 public void updateOrders(String orderID, String orderStatus, String totalCost, String productID, String quantity, String date) throws SQLException {       
    st.executeUpdate("UPDATE IOTUSER.Order_T SET ORDERID='" + orderID + "', ORDERSTATUS='" + orderStatus + "', TOTALCOST='" + totalCost + "', PRODUCTID='" + productID + "', QUANTITY='" + quantity + "' WHERE DATE='" + date + "'");  
 
+
 }       
 
-//delete a user from the database   
+
+
+
+
+
+
 public void deleteOrders(String productID) throws SQLException{       
     st.executeUpdate("DELETE FROM IOTUSER.Order_T WHERE PRODUCTID='" + productID + "'");
 
