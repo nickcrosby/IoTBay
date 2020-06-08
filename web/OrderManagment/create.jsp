@@ -18,12 +18,18 @@
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="../index.jsp">Home</a></li>
-                <li><a href="../catalogue.jsp">Catalogue</a></li>
-                <li><a href="dashboard.jsp">Back</a></li>
+                <li><a href="../catalogue.jsp">Back</a></li>
+                <li><a href="read.jsp" >Read Order</a></li>
+                <li><a href="update.jsp" >Update Order</a></li>
+                <li><a href="delete.jsp" >Delete Order</a></li>
                 <li><a href="../logout.jsp">Logout</a></li>
             </ul>
         </div>
-        
+           <div class="mainContainer">
+            <h1>Order</h1>
+          
+            
+        </div>
         
         
     </body>

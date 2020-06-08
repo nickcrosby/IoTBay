@@ -36,7 +36,6 @@
             <!--Go to main and logout-->
             <div>
                 <a href="main.jsp">Main</a>
-                <a href="OrderManagment/orderpage.jsp" id="orderpage">Order</a>
                 <a href="logout.jsp">Logout</a>
             </div>
         </section>

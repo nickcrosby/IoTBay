@@ -14,6 +14,7 @@
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="index.jsp">Home</a></li>
+                <a href="OrderManagment/create.jsp" id="orderpage">Order</a>
                 <li><a href="logout.jsp">Logout</a></li>
             </ul>
         </div>
