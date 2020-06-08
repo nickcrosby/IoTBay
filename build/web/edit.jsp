@@ -11,9 +11,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home Page</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div><span class="time" id="time"></div>
+        <!--Main site image-->
+        <div class="bgimage">
         <%
             Customer customer = (Customer) session.getAttribute("customer");
             String updated = (String)session.getAttribute("updated");
@@ -21,12 +23,12 @@
         
         <div>
             <a class="button" href="MainServlet?email='<%= customer.getEmail()%>'&password='<%=customer.getPassword()%>'">Main</a>
-            <a class="button" href="logout.jsp">Logout</a>
+            <a class="button" href="LogoutController">Logout</a>
         </div>
         
         <h1>Edit Customer Information <span class="message"> <%=(updated != null ? updated : "")%></h1>
         <form method="post" action="UpdateServlet">
-            <table>
+            <table id="form_table">
                 <tr><td>Email:</td><td><input type="text" name="email" value="${customer.email}"</td></tr>
                 <tr><td>First Name:</td><td><input type="text" name="fname" value="${customer.fname}"</td></tr>
                 <tr><td>Last Name:</td><td><input type="text" name="lname" value="${customer.lname}"</td></tr>
