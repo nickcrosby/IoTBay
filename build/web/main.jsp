@@ -26,9 +26,9 @@
                 </table>
                 <!--Logout and Back navigation-->
                 <div class="mainContainer">
-                    <a class="button" href="EditServlet?email='<%= customer.getEmail()%>'&password='<%= customer.getPassword()%>'">Account</a>
+                    <a class="button" href="edit.jsp">Account</a>
                     <a href="welcome.jsp">Back</a>
-                    <a href="LogoutController" class="button">Logout</a>    
+                    <a href="logout.jsp" class="button">Logout</a>    
                 </div>
             </div>
         </section>

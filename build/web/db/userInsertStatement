@@ -1,0 +1,21 @@
+INSERT INTO USERS (Email, FirstName, LastName, Phone, Password)
+VALUES
+('dpeppard0@1688.com', 'Darn', 'Peppard', '58653451', 'V5Qql1NFSe'),
+('eixor1@cnn.com', 'Ezra', 'Ixor', '55115039', '14J0Kmb'),
+('bcushworth2@cbc.ca', 'Blake',	'Cushworth', '23215762', 'YbP5ZJt7FnM'),
+('amacalroy3@gov.uk', 'Agnola', 'MacAlroy', '90172680', 'HMpef74N4lb'),
+('aopy4@dedecms.com', 'Ardine',	'Opy', '47334431', 'g2Ox0unAu'),
+('fslowgrave5@washpost.com', 'Fletcher', 'Slowgrave', '76865470', 'bKQATBnASI'),
+('bjollie6@ifeng.com', 'Bria', 'Jollie', '95619521', 'KxQs2aF'),
+('friddiough7@xrea.com', 'Felice', 'Riddiough', '99268357', 'X2Bwvr8zSjN8'),
+('mmacfie8@squidoo.com', 'Moise', 'MacFie', '22779133', 'TXVCt7e1n'),
+('escouse9@canalblog.com', 'Elsy', 'Scouse', '62853900', 'RNqpSgZ0'),
+('ishevlina@hibu.com', 'Isabella', 'Shevlin', '82275799', 'uhWYE7uuJeU'),
+('aelsbyb@patch.com','Atlante', 'Elsby', '62928794', 'Tb0pkl'),
+('msambedgec@google.com', 'Meade', 'Sambedge', '33187052', 'SiOYemX6'),
+('mpiscopellod@mysql.com', 'Mallory', 'Piscopello', '95347751', '6MjyT5t'),
+('dwhapling@cyberchimp.com', 'Dolorita', 'Whaplington', '49513636', 'fDXFBFESr'),
+('hbarribalf@paypal.com', 'Hilary', 'Barribal', '16696538', 'gE9dStg'),
+('icreeseg@google.co.jp', 'Ives', 'Creese', '78653942', 'LgU2VIm8'),
+('hhouldh@google.com.hk', 'Herrick', 'Hould',, '60975453', 'aY6QmD2h6y'),
+('bducei@bandcamp.com', 'Brett', 'Duce', '95858669', '0TwBaG8pZWjT');

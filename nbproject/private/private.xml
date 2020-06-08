@@ -3,19 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/main.jsp</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/index.jsp</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/WEB-INF/web.xml</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/register.jsp</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/LoginServlet.java</file>
             <file>file:/Users/ncrosby17/Desktop/IoTBay/web/db/customerInsertStatement</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/TestDB.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/edit.jsp</file>
             <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/uts/isd/model/Customer.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/main.jsp</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/CancelServlet.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/index.jsp</file>
             <file>file:/Users/ncrosby17/Desktop/IoTBay/web/login.jsp</file>
             <file>file:/Users/ncrosby17/Desktop/IoTBay/</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/uts/isd/model/dao/DB.java</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/uts/isd/model/dao/DBManager.java</file>
-            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/ConnServlet.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/register.jsp</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/Validator.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/RegisterServlet.java</file>
         </group>
     </open-files>
 </project-private>

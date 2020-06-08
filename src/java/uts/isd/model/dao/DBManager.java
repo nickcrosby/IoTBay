@@ -23,14 +23,27 @@ public DBManager(Connection conn) throws SQLException {
    st = conn.createStatement();   
 }
 
-//Find user by email and password in the database   
-public Customer findCustomer(String email, String password) throws SQLException {       
-   //setup the select sql query string       
-   //execute this query using the statement field       
-   //add the results to a ResultSet       
-   //search the ResultSet for a user using the parameters               
-   return null;   
-}
+    //Find customer by ID in the database - read one row in the database table
+    public Customer findCustomer(String email, String password) throws SQLException {
+        //setup the select sql query string
+        String fetch = "select * from IOTUSER.CUSTOMER where EmailAddress = '" + email + "' and PASSWORD = '" + password + "'";
+        //execute this query using the statement field
+        ResultSet rs = st.executeQuery(fetch);
+        //add the results to a ResultSet 
+        while (rs.next()) {
+            String customerEmail = rs.getString(1);
+            String customerPassword = rs.getString(7);
+                if (customerEmail.equals(email) && customerPassword.equals(password)){
+                    String firstName = rs.getString(2);
+                    String lastName = rs.getString(3);
+                    String dob = rs.getString(6);
+                    String address = rs.getString(4);
+                    String phone = rs.getString(5);
+                    //search the ResultSet for a user using the parameters
+                    return new Customer(email, firstName, lastName, address, phone, dob, password);
+                }
+        } return null;
+    }
 
     //Add a customer-data into the database   
     public void addCustomer(String email, String fname, String lname, String address, String phone, String dob, String password) throws SQLException {                   //code for add-operation       
@@ -39,19 +52,19 @@ public Customer findCustomer(String email, String password) throws SQLException 
 
     //update a customer details in the database   
     public void updateCustomer(String email, String fname, String lname, String address, String phone, String dob, String password) throws SQLException {
-        st.executeUpdate("UPDATE IOTUSER.CUSTOMER SET EmailAddress = '" + email + "', FIRSTNAME = '" + fname + "', LASTNAME = '" + lname + "',"
+        st.executeUpdate("UPDATE IOTUSER.CUSTOMER SET EMAILADDRESS = '" + email + "', FIRSTNAME = '" + fname + "', LASTNAME = '" + lname + "',"
                 + "ADDRESS = '" + address + "', PHONE = '" + phone + "', DOB = '" + dob + "', PASSWORD = '" + password + "'");
     }    
 
-//delete a user from the database   
-public void deleteCustomer(String email) throws SQLException{       
-   //code for delete-operation   
-
-}
+    //delete a customer from the database   
+    public void deleteCustomer(String email) throws SQLException {
+        //code for delete-operation
+        st.executeUpdate("DELETE FROM IOTUSER.CUSTOMER WHERE EMAILADDRESS = '" + email + "'");
+    }
 
     //fetch all customers in the database
     public ArrayList<Customer> fetchCustomers() throws SQLException {
-        String fetch = "select * from CUSTOMER";
+        String fetch = "select * from IOTUSER.CUSTOMER";
         ResultSet rs = st.executeQuery(fetch);
         ArrayList<Customer> temp = new ArrayList();
         
@@ -68,7 +81,7 @@ public void deleteCustomer(String email) throws SQLException{
         return temp;
     }
 
-    //read every row from USERS and verify if user exists or not
+    //read every row from CUSTOMERS and verify if customer exists or not
     public boolean checkCustomer(String email, String password) throws SQLException {
         String fetch = "select * from IOTUSER.CUSTOMER where EmailAddress = '" + email + "' and Password = '" + password + "'";
         ResultSet rs = st.executeQuery(fetch);

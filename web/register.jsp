@@ -28,7 +28,7 @@
         <h1>Registration</h1>
             <p>Create a new account</p><br>
             <!--New user form-->
-            <form method="post" action="RegisterServlet">
+            <form method="post" action="welcome.jsp">
                 <table class="mainContainer">
                     <tr><td>Email</td><td><input type="email" placeholder="Email" name="email"></td></tr>
                     <tr><td>First Name</td><td><input type="text" placeholder="First Name" name="fname"></td></tr> 
@@ -39,7 +39,7 @@
                     <tr><td>Password</td><td><input type="password" placeholder="Password" name="password"></td></tr>            
                     <!--Submit-->
                     <tr><td>
-                            <a href="CancelServlet" class="button"> Cancel </a> 
+                            <a href="index.jsp" class="button"> Cancel </a> 
                         </td><td><input class="button" type="submit" value="Register"></td></tr>     
                 </table>
             </form>

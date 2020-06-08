@@ -23,12 +23,12 @@
         %>
         
         <div>
-            <a class="button" href="MainServlet?email='<%= customer.getEmail()%>'&password='<%=customer.getPassword()%>'">Main</a>
-            <a class="button" href="LogoutController">Logout</a>
+            <a class="button" href="main.jsp">Main</a>
+            <a class="button" href="logout.jsp">Logout</a>
         </div>
         
         <h1>Edit Customer Information <span class="message"> <%=(updated != null ? updated : "")%></h1>
-        <form method="post" action="UpdateServlet">
+        <form method="post" action="edit.jsp">
             <table id="form_table">
                 <tr><td>Email:</td><td><input type="text" name="email" value="${customer.email}"</td></tr>
                 <tr><td>First Name:</td><td><input type="text" name="fname" value="${customer.fname}"</td></tr>
