@@ -1,9 +1,3 @@
-<%-- 
-    Document   : delete
-    Created on : 01/06/2020, 11:25:30 AM
-    Author     : eduardomoraza
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

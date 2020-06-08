@@ -1,9 +1,3 @@
-<%-- 
-    Document   : dashboard
-    Created on : 08/06/2020, 11:18:55 PM
-    Author     : eduardomoraza
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
