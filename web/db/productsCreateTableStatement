@@ -5,6 +5,6 @@ ProductName varchar(50) NOT NULL,
 ProductDescription varchar(50),
 ProductCost double,
 ProductRetailPrice double,
-ProductStock integer NOT NULL default(0),
+ProductStock integer NOT NULL,
 PRIMARY KEY(ProductId)
 );
