@@ -13,7 +13,7 @@
         <title>Home Page</title>
     </head>
     <body>
-        <div><span class="time" id="time/>"</div>
+        <div><span class="time" id="time"></div>
         <%
             Customer customer = (Customer) session.getAttribute("customer");
             String updated = (String)session.getAttribute("updated");
@@ -24,7 +24,7 @@
             <a class="button" href="logout.jsp">Logout</a>
         </div>
         
-        <h1>Edit Customer Information</h1>
+        <h1>Edit Customer Information <span class="message"> <%=(updated != null ? updated : "")%></h1>
         <form method="post" action="UpdateServlet">
             <table>
                 <tr><td>Email:</td><td><input type="text" name="email" value="${customer.email}"</td></tr>
