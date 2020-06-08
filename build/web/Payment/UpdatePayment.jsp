@@ -25,9 +25,9 @@
                 <li><a href="../logout.jsp">Logout</a></li>
             </ul>
         </div>
-        <h1>Update Payment</h1>
-        <p>Update payment details</p><br>
         <section class="mainContainer">
+            <h1>Update Payment</h1>
+            <p>Update payment details</p><br>    
             <form method="post" action="">
                 <table class="mainContainer">
                     <tr><td>Account Name</td><td><input type="text" placeholder="Account Name" name="AName"></td></tr> 

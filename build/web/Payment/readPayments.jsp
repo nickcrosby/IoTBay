@@ -26,7 +26,14 @@
         </div>
         <div class="mainContainer">
             <h1>Payment History</h1>
-            <p>PAYMENT HISTORY</p><br>
+            <p>Payment History</p><br>
+            <table class="mainContainer">
+                <tr><td>Account Name</td><td><input type="text" placeholder="Search and Display Account Name" name="AName"></td></tr> 
+                <tr><td>Account Number</td><td><input type="text" placeholder="Search and Display Account Number" name="ANumber"></td></tr>  
+                <tr><td>Expiry Date</td><td><input type="date" placeholder="Search and Display Expiry Date" name="EXPDate"></td></tr>
+                <!--Search and Delete record-->
+                <tr><td></td><td><input type="submit" value="Search"></td></tr>                     
+            </table>
         </div>
     </body>
 </html>
