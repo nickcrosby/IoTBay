@@ -36,6 +36,7 @@
             <!--Go to main and logout-->
             <div>
                 <a href="main.jsp">Main</a>
+                <a href="catalogue.jsp">Catalogue</a>
                 <a href="logout.jsp">Logout</a>
             </div>
         </section>
