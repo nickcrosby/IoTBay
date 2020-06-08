@@ -1,6 +1,6 @@
 <%-- 
     Document   : readPayments
-    Created on : 08/06/2020, 5:28:07 PM
+    Created on : 07/06/2020, 5:28:07 PM
     Author     : conce
 --%>
 
@@ -28,6 +28,9 @@
             <h1>Payment History</h1>
             <p>Payment History</p><br>
             <table class="mainContainer">
+                <%-- Read the Payment Details and allow user to search for information --%>
+                <tr><td>Payment ID</td><td><input type="text" placeholder="Search and Display PaymentID" name="PayID"></td></tr> 
+                <tr><td>Date of Payment</td><td><input type="text" placeholder="Search and Display Payment Date" name="PayDate"></td></tr> 
                 <tr><td>Account Name</td><td><input type="text" placeholder="Search and Display Account Name" name="AName"></td></tr> 
                 <tr><td>Account Number</td><td><input type="text" placeholder="Search and Display Account Number" name="ANumber"></td></tr>  
                 <tr><td>Expiry Date</td><td><input type="date" placeholder="Search and Display Expiry Date" name="EXPDate"></td></tr>

@@ -37,7 +37,7 @@ public class TestDB01 {
         return in.nextLine().charAt(0);
     }
     
-    private void runQueries() throws SQLException {
+    void runQueries() throws SQLException {
         char c;
         
         while((c = readChoice()) != '*') {
