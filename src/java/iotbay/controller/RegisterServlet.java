@@ -47,8 +47,8 @@ public class RegisterServlet extends HttpServlet{
         } else if (!validator.validateName(lname)) {
             session.setAttribute("nameErr", "Error: Name format is incorrect");
             request.getRequestDispatcher("register.jsp").include(request, response);
-        } else if (!validator.validateDate(dob)) {
-            session.setAttribute("dateErr", "Error: Date format is incorrect");
+        } else if (!validator.validateName(address)) {
+            session.setAttribute("nameErr", "Error: Address format is incorrect");
             request.getRequestDispatcher("register.jsp").include(request, response);
         } else if (!validator.validatePhone(phone)) {
             session.setAttribute("phoneErr", "Error: Phone format is incorrect");

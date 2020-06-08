@@ -8,6 +8,13 @@
         <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
+        <%
+            String existErr = (String) session.getAttribute("existErr");
+            String emailErr = (String) session.getAttribute("emailErr");
+            String passErr = (String) session.getAttribute("passErr");
+            String nameErr = (String) session.getAttribute("nameErr");
+            String dateErr = (String) session.getAttribute("dateErr");
+        %>
         <!--Main site image-->
         <div class="bgimage">
         </div>
