@@ -19,6 +19,7 @@
                 <a href="login.jsp" id="login">Login</a>
                 <a href="register.jsp" id="register">Register</a>
                 <a href="catalogue.jsp" id="devcatalogue">Device Catalogue</a>
+                <a href="OrderManagment/orderpage.jsp" id="orderpage">Order</a>
             </div>
         </section>
     </body>

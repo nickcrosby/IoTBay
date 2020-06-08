@@ -1,0 +1,25 @@
+INSERT INTO ANONYMOUSORDERS (EMAIL, PHONENUMBER, ADDRESS, ORDERID, ORDERSTATUS, TOTALCOST, PRODUCTID, QUANTITY, DATE)
+VALUES
+('Cornelius@gmail.com', '0421887809', '4310 Montgomery Hwy', '23090', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Isidore@gmail.com', '0421908290', '7100 Aaron Aronov Drive', '38292', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Arty@gmail.com', '0567980000', '3100 Hough Rd', '92029', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Rhianna@gmail.com', '0421888909', '2200 South Mckenzie St', '02929', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Janine@gmail.com', '0421902030', '2001 Glenn Bldv Sw', '57483', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Carlos@gmail.com', '0421887809', '40 East Meighan Blvd', '03928', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Darlene@gmail.com', '0421887809', '890 Odum Road', '39208', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Mort@gmail.com', '0421887809', '1608 W Magnolia Ave', '10298', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Shepard@gmail.com', '0421887809', '501 Willow Lane', '10191', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Zedekiah@gmail.com', '0421887809', '209 Lakeshore Parkway', '03948', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Pavla@gmail.com', '0421887809', '1007 Red Farmer Drive', '39182', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Ronni@gmail.com', '0421887809', '11610 Memorial Pkwy South', '30298', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Grantham@gmail.com', '0421887809', '2200 Sparkman Drive', '30298', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Averell@gmail.com', '0421887809', '330 Sutton Rd', '38290', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Danny@gmail.com', '0421887809', '1625 Pelham South', '93029', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Bradley@gmail.com', '0421887809', '8551 Whitfield Ave', '02987', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Stace@gmail.com', '0421887809', '8650 Madison Blvd', '78367', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Adel@gmail.com', '0421887809', '145 Kelley Blvd', '91023', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Beryl@gmail.com', '0421887809', '6350 Cottage Hill Road', '39281', 'Shipped', '$100.00', '01234567', '10', '03/02/2020'),
+('Rivalee@gmail.com', '0421887809', '2500 Dawes Road', '20183', 'Shipped', '$100.00', '01234567', '10', '03/02/2020');
+
+
+
