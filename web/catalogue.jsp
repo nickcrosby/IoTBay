@@ -13,6 +13,13 @@
         <!--Navigation bar-->
         <div class="navbar">
             <ul class="navbarElements">
+<<<<<<< HEAD
+=======
+
+                <li><a href="index.jsp">Home</a></li>
+                <a href="OrderManagment/dashboard.jsp" id="orderpage">Order</a>
+
+>>>>>>> Feature-03
                 <li><a href="logout.jsp">Logout</a></li>
             </ul>
         </div>
