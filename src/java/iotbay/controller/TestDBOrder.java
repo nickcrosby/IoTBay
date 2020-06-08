@@ -149,12 +149,12 @@ public class TestDBOrder {
         }
     }
     
-    private void showALL() {
+    private void showAll() {
         try {
             ArrayList<Orders> Orders = db.fectOrders();
             System.out.println("ORDER TABLE: ");
             Orders.stream().forEach((orders) -> {
-                System.out.printf("%-20s %-30s %-20s %-10s \n",orders.getorderID(), orders.getorderStatus(), orders.gettotalCost(), orders.getproductID(), orders.getquantity(), orders.getdate());  
+                System.out.printf("%-20s %-30s %-20s %-10s \n",orders.getOrderID(), orders.getOrderStatus(), orders.getTotalCost(), orders.getProductID(), orders.getQuantity(), orders.getDate());  
             });
             System.out.println();
         } catch (SQLException ex) {
