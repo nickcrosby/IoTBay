@@ -25,7 +25,7 @@
             </ul>
         </div>
         <section class="mainContainer">
-            <h1>Registration</h1>
+        <h1>Registration</h1>
             <p>Create a new account</p><br>
             <!--New user form-->
             <form method="post" action="RegisterServlet">
