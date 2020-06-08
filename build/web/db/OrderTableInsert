@@ -1,4 +1,4 @@
-CREATE TABLE Order (
+CREATE TABLE ORDER (
    OrderID INT NOT NULL,
    Status VARCHAR(10),
    Total_Cost VARCHAR(10) NOT NULL,
