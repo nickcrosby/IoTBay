@@ -10,11 +10,6 @@ import uts.isd.model.Products;
 import java.sql.*;
 import java.util.ArrayList;
 
-/* 
-* DBManager is the primary DAO class to interact with the database. 
-* Complete the existing methods of this classes to perform CRUD operations with the db.
-*/
-
 public class DBManager {
 
 private Statement st;
@@ -22,8 +17,7 @@ private Statement st;
 public DBManager(Connection conn) throws SQLException {       
    st = conn.createStatement();   
 }
-
-//Find user by email and password in the database   
+  
 public Products findProduct(String ProductName) throws SQLException {       
    String fetch = "select * from IOTUSER.PRODUCTS where PRODUCTNAME='" + ProductName + "'";
    ResultSet rs = st.executeQuery(fetch);
@@ -40,8 +34,7 @@ while (rs.next())   {
     }
     
 }
-   //add the results to a ResultSet       
-   //search the ResultSet for a user using the parameters               
+            
    return null;
 }
 public Products findProduct(int ProductId) throws SQLException {       
@@ -62,22 +55,50 @@ while (rs.next())   {
    return null;
 }
 
-//Add a user-data into the database   
+//Add a product into the database   
 public void addProduct(int productId, String productName, String productDesc, double productCost, double productRP, int productStock) throws SQLException {               
   st.executeUpdate("INSERT INTO IOTUSER.PRODUCTS " + "VALUES ('" + productId + "', '" + productName + "', '" + productDesc + "', '" + productCost + "', '" + productRP + "', '" + productStock + "')");   
 
 }
 
-//update a user details in the database   
+//update a products details in the database   
 public void updateProduct(int productId, String productName, String productDesc, double productCost, double productRP, int productStock) throws SQLException {       
    st.executeUpdate("UPDATE IOTUSER.PRODUCTS SET PRODUCTNAME='" + productName + "',PRODUCTDESCRIPTION='" + productDesc + "',PRODUCTCOST='" + productCost + "',PRODUCTRETAILPRICE='" + productRP + "',PRODUCTSTOCK='" + productStock + "'WHERE PRODUCTID='" + productId + "'");
 }       
 
-//delete a user from the database   
-public void deleteProduct(String email) throws SQLException{       
-   //code for delete-operation   
-
+//delete a product from the database   
+public void deleteProduct(int productId) throws SQLException{       
+   st. executeUpdate("DELETE FROM IOTUSER.PRODUCTS WHERE PRODUCTID='" + productId + "'");
 }
 
+public ArrayList<Products> displayProducts() throws SQLException {
+    String fetch ="select * from IOTUSER.PRODUCTS";
+    ResultSet rs = st.executeQuery(fetch);
+    ArrayList<Products> temp = new ArrayList();
+    
+    while(rs.next()) {
+        int id = rs.getInt(1);
+        String name = rs.getString(2);
+        String desc = rs.getString(3);
+        double cost = rs.getDouble(4);
+        double rp = rs.getDouble(5);
+        int stock = rs.getInt(6);
+        temp.add(new Products(id,name,desc,cost,rp,stock));
+    }
+    return temp;
+}
 
+public boolean checkProducts(int productId, String productName)throws SQLException{
+    String fetch = "select * from IOTUSER.PRODUCTS where PRODUCTID = '" + productId + "' and  PRODUCTNAME='" + productName + "'";
+    ResultSet rs = st.executeQuery(fetch);
+    while (rs.next()){
+        int ProductId = rs.getInt(1);
+        String ProductName = rs.getString(2);
+        if(ProductId==productId && ProductName.equals(productName))
+        {
+            return true;
+        }
+    }
+    return false;
+}
 }
