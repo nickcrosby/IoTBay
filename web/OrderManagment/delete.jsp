@@ -18,10 +18,7 @@
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="../index.jsp">Home</a></li>
-                <li><a href="../catalogue.jsp">Back</a></li>
-                <li><a href="create.jsp" >Create Order</a></li>
-                <li><a href="read.jsp" >Read Order</a></li>
-                <li><a href="update.jsp" >Update Order</a></li>
+                <li><a href="dashboard.jsp">Back</a></li>
                 <li><a href="../logout.jsp">Logout</a></li>
             </ul>
         </div>

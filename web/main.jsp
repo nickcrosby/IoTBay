@@ -26,7 +26,7 @@
                 </table>
                 <!--Logout and Back navigation-->
                 <div class="mainContainer">
-                    <a href="OrderManagment/create.jsp" id="orderpage">Order</a>
+                    <a href="OrderManagment/dashboard.jsp" id="orderpage">Order</a>
                     <a href="welcome.jsp">Back</a>
                     <a href="logout.jsp" class="logout">Logout</a>    
                 </div>

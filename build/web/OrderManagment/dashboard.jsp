@@ -1,6 +1,6 @@
 <%-- 
-    Document   : create
-    Created on : 01/06/2020, 11:24:52 AM
+    Document   : dashboard
+    Created on : 08/06/2020, 11:18:55 PM
     Author     : eduardomoraza
 --%>
 
@@ -9,26 +9,27 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Create Order</title>
+        <title>Order Dashboard</title>
         <link rel="stylesheet" href="../styles/style.css">
     </head>
     <body>
-        <div class="bgimage">
-        </div>
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="../index.jsp">Home</a></li>
-                <li><a href="dashboard.jsp">Back</a></li>
+                <li><a href="../catalogue.jsp">Back</a></li>
                 <li><a href="../logout.jsp">Logout</a></li>
             </ul>
         </div>
-           <div class="mainContainer">
-            <h1>Order</h1>
-            <p>Order details</p>
+        <!--Main titles-->
+       
+         <div class="mainContainer">
+            <h1>Order Dashboard</h1>
+            <p>Create an order, View order history, update/delete saved orders</p><br>
+            <!--CRUD management pages-->
+            <a href="create.jsp" >Create</a>
+            <a href="read.jsp" >Read Order</a>
             <a href="update.jsp" >Update Order</a>
             <a href="delete.jsp" >Delete Order</a><br><br>
         </div>
-        
-        
     </body>
 </html>
