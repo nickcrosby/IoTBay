@@ -3,21 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/uts/isd/model/dao/DBConnector.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/read.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/styles/style.css</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/iotbay/controller/StaffManagementController.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/create.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/uts/isd/model/dao/DBManager.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/dashboard.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/src/java/uts/isd/model/dao/DB.java</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/update.jsp</file>
-            <file>file:/C:/Users/vaken/Documents/IoTBay/web/adminPages/delete.jsp</file>
-=======
-            <file>file:/D:/Documents/IoTBay/web/db/customerInsertStatement</file>
-            <file>file:/D:/Documents/IoTBay/web/db/CustomerInsertTable</file>
->>>>>>> Feature04
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/main.jsp</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/index.jsp</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/WEB-INF/web.xml</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/register.jsp</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/LoginServlet.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/db/customerInsertStatement</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/TestDB.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/uts/isd/model/Customer.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/web/login.jsp</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/uts/isd/model/dao/DB.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/uts/isd/model/dao/DBManager.java</file>
+            <file>file:/Users/ncrosby17/Desktop/IoTBay/src/java/iotbay/controller/ConnServlet.java</file>
         </group>
     </open-files>
 </project-private>
