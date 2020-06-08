@@ -12,7 +12,7 @@ public class Customer {
     private String phone;
 
     //Initialise constructor with user fields
-    public Customer(String fname, String lname, String password, String dob, String email, String address, String phone) {
+    public Customer(String email, String fname, String lname, String address, String phone, String dob, String password) {
         this.fname = fname;
         this.lname = lname;
         this.password = password;
