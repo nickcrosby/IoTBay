@@ -6,10 +6,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome</title>
         <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
+    </head>     
         <!--Main site image-->
         <div class="bgimage">
+        </div>
+        <!--Navigation bar-->
+        <div class="navbar">
+            <ul class="navbarElements">
+                <li><a href="adminPages/dashboard.jsp">Administrative Dashboard</a></li>
+                <li><a href="index.jsp">Home</a></li>
+            </ul> 
         </div>
         <!--Retrieve form data from registration form-->
         <%
@@ -38,6 +44,7 @@
                 <a href="main.jsp">Main</a>
                 <a href="catalogue.jsp">Catalogue</a>
                 <a href="logout.jsp">Logout</a>
+                <a href="Payment/readPayments.jsp">Payment Details</a>
             </div>
         </section>
 
