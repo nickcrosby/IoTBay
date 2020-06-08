@@ -16,26 +16,24 @@
         <!--Main site image-->
         <div class="bgimage">
         </div>
-        </div>
-            <h1>Payment</h1><br>
             <form method="post" action="PaymentConfirm.jsp">
-                <div class="PaymentForm">
-                        <table class="mainContainer"> 
-                            <tr><td>Account Name</td><td><input type="String" placeholder="Joe Briggs" name="Account Name"></td></tr>           
-                            <tr><td>Account Number</td><td><input type="String" placeholder="1234 56789 1011" name="Account Number"></td></tr>           
-                            <tr><td>Date</td><td><input type="String" placeholder="10/3/2020" name="Date"></td></tr>           
-                            <tr><td>BSB</td><td><input type="String" placeholder="BSB Num" name="BSB"></td></tr>           
-<!--//GET FROM Eduardo -->  <tr><td>Total_Amount</td><td><input type="String" placeholder="$_._" name="Total Amount"></td></tr>           
+                <div class="mainContainer">
+                    <table class="mainContainer"> 
+                    <h1>Payment</h1>
+                    <tr><td>Account Name</td><td><input type="String" placeholder="Joe Briggs" name="Account Name"></td></tr>           
+                    <tr><td>Account Number</td><td><input type="String" placeholder="1234 56789 1011" name="Account Number"></td></tr>           
+                    <tr><td>Payment Method</td><td><input type="String" placeholder="Credit Card" name="Payment_Method"></td></tr>           
+                    <tr><td>Date</td><td><input type="String" placeholder="10/3/2020" name="Date"></td></tr>           
+<!--//GET FROM Eduardo --> <tr><td>Total_Amount</td><td><input type="String" placeholder="$_._" name="Total Amount"></td></tr>           
                             <!--Submit-->
-                            <tr><td></td><td><input type="submit" value="Pay"></td></tr>     
+                    <tr><td></td><td><input type="submit" value="Pay"></td></tr>     
                         </table>
                 </div>
             </form>
-            </div>
         <!--Logout and Back navigation-->
         <div class="mainContainer">
             <a href="../welcome.jsp">Back</a>   <!-- Need to fix to order -->
-            <a href="readPayments.jsp">Read Payments</a>
+            <a href="readPayments.jsp">Payment Details</a>
         </div>
     </body>
 </html>
