@@ -28,7 +28,7 @@ public class TestDB01 {
             conn = connector.openConnection();
             db = new DBManager(conn);
         } catch (ClassNotFoundException | SQLException ex) {
-            Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestDB01.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -85,7 +85,7 @@ public class TestDB01 {
         try {
             db.addCustomer(email, fname, lname, address, phone, dob, password);
         } catch (SQLException ex) {
-            Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestDB01.class.getName()).log(Level.SEVERE, null, ex);
         }
         System.out.println("User is added to the database");
     }
@@ -144,7 +144,7 @@ public class TestDB01 {
                 System.out.println("Customer does not exist.");
             }
         } catch (SQLException ex) {
-            Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestDB01.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -161,7 +161,7 @@ public class TestDB01 {
                 System.out.println("Customer does not exist.");
             }
         } catch (SQLException ex) {
-            Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestDB01.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -174,7 +174,7 @@ public class TestDB01 {
             });
             System.out.println();
             } catch (SQLException ex) {
-                Logger.getLogger(TestDB.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(TestDB01.class.getName()).log(Level.SEVERE, null, ex);
             }
         } 
 }

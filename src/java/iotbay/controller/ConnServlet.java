@@ -7,7 +7,6 @@
  */
 package iotbay.controller;
 
-import uts.isd.model.dao.DBConnector;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
