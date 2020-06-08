@@ -69,9 +69,8 @@ public void addProduct(int productId, String productName, String productDesc, do
 }
 
 //update a user details in the database   
-public void updateProduct( String email, String name, String password, String gender, String favcol) throws SQLException {       
-   //code for update-operation   
-
+public void updateProduct(int productId, String productName, String productDesc, double productCost, double productRP, int productStock) throws SQLException {       
+   st.executeUpdate("UPDATE IOTUSER.PRODUCTS SET PRODUCTNAME='" + productName + "',PRODUCTDESCRIPTION='" + productDesc + "',PRODUCTCOST='" + productCost + "',PRODUCTRETAILPRICE='" + productRP + "',PRODUCTSTOCK='" + productStock + "'WHERE PRODUCTID='" + productId + "'");
 }       
 
 //delete a user from the database   
