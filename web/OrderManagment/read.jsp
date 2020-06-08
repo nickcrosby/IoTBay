@@ -24,7 +24,10 @@
         </div>
         <div class="mainContainer">
             <h1>Order History</h1>
-            
+            <table class="mainProfile">
+                <th>OrderID</th> <th>OrderStatus</th> <th>Cost</th> <th>Product</th> <th>Quantity</th> <th>Date</th>
+                
+            </table>
             
         </div>
     </body>
