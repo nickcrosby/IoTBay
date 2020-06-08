@@ -9,6 +9,7 @@ package uts.isd.model.dao;
 import uts.isd.model.Payment;
 import java.sql.*;
 import java.util.ArrayList;
+import uts.isd.model.Customer;
 
 /* 
 * DBManager is the primary DAO class to interact with the database. 
@@ -30,6 +31,8 @@ public Customer findCustomer(String email, String password) throws SQLException 
    //add the results to a ResultSet       
    //search the ResultSet for a user using the parameters               
    return null;
+}
+
 //Find Payment by PaymentID and Date in the database   
 public Payment findPayment(int PaymentID, String Date) throws SQLException {       
        String fetch = "select * from IOTUSER.Payment where PAYMENTID = '" + PaymentID + "' and DATE='" + Date +  "'";
