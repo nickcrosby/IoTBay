@@ -45,6 +45,8 @@
                 <a href="catalogue.jsp">Catalogue</a>
                 <a href="logout.jsp">Logout</a>
                 <a href="Payment/readPayments.jsp">Payment Details</a>
+                <a href="loginPages/accesslogs.jsp">Access Logs</a>
+                <a href="loginPages/edit.jsp">Edit Account</a>
             </div>
         </section>
 
