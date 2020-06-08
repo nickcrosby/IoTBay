@@ -9,6 +9,7 @@ import uts.isd.model.dao.DBManager;
 
 public class TestDB {
 
+    //DAO Instances
     private static Scanner in = new Scanner(System.in);
     private DBConnector connector;
     private Connection conn;
@@ -38,6 +39,7 @@ public class TestDB {
         return in.nextLine().charAt(0);
     }
 
+    //Menu selection
     private void runQueries() throws SQLException {
         char c;
 
@@ -64,6 +66,7 @@ public class TestDB {
         }
     }
 
+    //Test the CREATE functionality
     private void testAdd() {
         System.out.println("Email: ");
         String email = in.nextLine();
@@ -88,6 +91,7 @@ public class TestDB {
         System.out.println("Staff Memeber has been successfully added to database");
     }
 
+    //Test the READ functionality
     private void testRead() throws SQLException {
         System.out.println("Email: ");
         String email = in.nextLine();
@@ -104,6 +108,7 @@ public class TestDB {
         }
     }
 
+    //Test the UPDATE functionality
     private void testUpdate() {
         System.out.println("Email: ");
         String email = in.nextLine();
@@ -115,10 +120,10 @@ public class TestDB {
             if (db.checkStaff(email, password)) {
                 System.out.println("First Name: ");
                 String firstname = in.nextLine();
-                
+
                 System.out.println("Last Name: ");
                 String lastname = in.nextLine();
-                
+
                 db.updateStaff(email, firstname, lastname, password);
             } else {
                 System.out.print("Staff member does not exist. ");
@@ -128,6 +133,7 @@ public class TestDB {
         }
     }
 
+    //Test the DELETE functionality
     private void testDelete() {
         System.out.println("Email: ");
         String email = in.nextLine();
@@ -146,6 +152,7 @@ public class TestDB {
         }
     }
 
+    //Test the SHOW ALL functionality
     private void showAll() {
         try {
             ArrayList<Staff> staffMember = db.fetchStaff();

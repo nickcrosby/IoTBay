@@ -53,7 +53,7 @@ public class DeleteServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet DeleteServlet</title>");            
+            out.println("<title>Servlet DeleteServlet</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet DeleteServlet at " + request.getContextPath() + "</h1>");
@@ -140,5 +140,4 @@ public class DeleteServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
 }

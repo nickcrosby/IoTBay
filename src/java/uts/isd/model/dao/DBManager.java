@@ -71,6 +71,7 @@ public class DBManager {
         return temp;
     }
 
+    //Check if staff exists in the database
     public boolean checkStaff(String email, String password) throws SQLException {
         String fetch = "select * from ADMINISTRATOR.Staff where EMAIL = '" + email + "' and PASSWORD = '" + password + "'";
         ResultSet rs = st.executeQuery(fetch);

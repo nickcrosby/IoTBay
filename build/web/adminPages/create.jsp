@@ -23,7 +23,6 @@
             <h1>Administrative Dashboard</h1>
             <p>Create new staff member records</p><br>
             <section class="mainContainer">
-                <!--Create a new user-->
                 <!--Insert new staff members into database-->
                 <form method="post" action="">
                     <table class="mainContainer">

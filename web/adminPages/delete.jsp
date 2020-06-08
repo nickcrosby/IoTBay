@@ -37,18 +37,17 @@
             <h1>Administrative Dashboard</h1>
             <p>Delete existing staff member records</p><br>
             <section class="mainContainer">
-                <!--Read staff information-->
-                <!--View records one by one-->
+                <!--Search for a record-->
                 <form method="post" action="">
                     <table class="mainContainer">
                         <p>Find record</p>
                         <tr><td></td><td><input type="text" name="email" value="${staff.getEmail}" placeholder="Email"/></td></td></tr>
                         <tr><td></td><td> <%=staff.getPassword()%><input type="password" name="password" value="<%=staff.getPassword()%>" placeholder="Password"/></td></td></tr>            
-                        <!--Create record-->
+                        <!--Find record-->
                         <tr><td></td><td><input type="submit" value="Find"></td></tr>
                     </table><br><br>
-                    <!--Search for specific records-->
                 </form>
+                <!--Delete user-->
                 <form method="post" action="">
                     <table class="mainContainer">
                         <tr><td></td><td><input type="text" name="email" value="${staff.getEmail}" placeholder="Email"/></td></td></tr>
