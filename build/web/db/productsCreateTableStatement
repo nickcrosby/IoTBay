@@ -1,0 +1,10 @@
+CREATE TABLE Products
+(
+ProductId integer NOT NULL,
+ProductName varchar(50) NOT NULL,
+ProductDescription varchar(50),
+ProductCost double,
+ProductRetailPrice double,
+ProductStock integer NOT NULL default(0),
+PRIMARY KEY(ProductId)
+);
