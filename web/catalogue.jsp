@@ -22,5 +22,6 @@
             <p>Error 404: Content not found. Please come back later.</p>
             <!--Logout and Back navigation-->
         </div>
+        <a href="Payment/Payment.jsp" id="Payment">Payment</a>
     </body>
 </html>
