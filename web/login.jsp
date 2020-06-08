@@ -14,6 +14,7 @@
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="adminPages/dashboard.jsp">Administrative Dashboard</a></li>
+                <li><a href="adminPages/dashboard.jsp">Catalogue Admin</a></li>
                 <li><a href="index.jsp">Home</a></li>
             </ul>
         </div>
