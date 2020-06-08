@@ -67,9 +67,9 @@ public Payment findPayment(int PaymentID, String Date) throws SQLException {
        ResultSet rs = st.executeQuery(fetch);
        
        while (rs.next()) {
-           int paymentPaymentID = rs.getInt(1);
+           int paymentID = rs.getInt(1);
            String paymentDate = rs.getString(5);
-           if (PaymentID==PaymentID && paymentDate.equals(Date)) {
+           if (PaymentID==paymentID && paymentDate.equals(Date)) {
                String account_Name = rs.getString(2);
                int account_Number = rs.getInt(3);
                String payment_method = rs.getString(4);
@@ -82,13 +82,13 @@ public Payment findPayment(int PaymentID, String Date) throws SQLException {
 }
 
 //Add payment-data into the database   
-public void addPayment(int paymentID, String account_Name, int account_Number, String payment_Method, String date, String expDate) throws SQLException {                   //code for add-operation       
-  st.executeUpdate("INSERT INTO IOTUSER.Payment " + "VALUES ('" + paymentID + "', '" + account_Name + "', '" + account_Number + "', '" + payment_Method +"', '" + date +"', '" + expDate + "')" );   
+public void addPayment(int paymentID, String account_Name, int account_Number, String payment_Method, String date, int total_amount, String expDate) throws SQLException {                   //code for add-operation       
+  st.executeUpdate("INSERT INTO IOTUSER.Payment " + "VALUES ('" + paymentID + "', '" + account_Name + "', '" + account_Number + "', '" + payment_Method +"', '" + date +"', '" + total_amount +"', '" + expDate + "')");   
 }
 
 //update a payment details in the database   
-public void updatePayment(String account_Name, String account_Number, String expDate) throws SQLException {       
-  st.executeUpdate("INSERT INTO IOTUSER.Payment SET Account_Name-'" + account_Name + "', account_Number-'" + account_Number + "', EXP DATE'" + account_Number + "'" );   
+public void updatePayment(String account_Name, int account_Number, String expDate) throws SQLException {       
+  st.executeUpdate("INSERT INTO IOTUSER.Payment SET Account_Name='" + account_Name + "', account_Number-'" + account_Number + "', EXP DATE'" + account_Number + "'" );   
 }       
 
 //delete a user from the database   
@@ -97,7 +97,7 @@ public void deletePayment(int account_Number) throws SQLException{
 }
 
 //Read all Payments made
-public ArrayList<Payment> fectPayment() throws SQLException {
+public ArrayList<Payment> displayPayment() throws SQLException {
     String fetch = "select * from PAYMENT";
     ResultSet rs = st.executeQuery(fetch);
     ArrayList<Payment> temp = new ArrayList();
@@ -116,13 +116,13 @@ public ArrayList<Payment> fectPayment() throws SQLException {
 }
 
 //Verify if there is a Payment made with the accountname and account number
-public boolean checkPayment (String account_Name, int account_Number) throws SQLException {
-    String fetch = "select * from IOTUSER.Payment where Account_Name= '" + account_Name + "' and Account_Number='" + account_Number + "'";
+public boolean checkPayment(int paymentID, String date) throws SQLException {
+    String fetch = "select * from IOTUSER.Payment where Payment ID= '" + paymentID + "' and date='" + date + "'";
     ResultSet rs = st.executeQuery(fetch);
     while (rs.next()) {
-        String Account_Name = rs.getString(2);
-        int Account_Number = rs.getInt(3);
-        if (Account_Name.equals(account_Name) && account_Number==Account_Number){
+        int PaymentID = rs.getInt(1);
+        String Date = rs.getString(5);
+        if (paymentID==PaymentID && date.equals(Date)){
             return true;
         }
     }
@@ -247,3 +247,4 @@ public boolean checkProducts(int productId, String productName)throws SQLExcepti
         return false;
     }
 }
+

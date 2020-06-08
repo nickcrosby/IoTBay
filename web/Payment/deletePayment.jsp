@@ -1,6 +1,6 @@
 <%-- 
     Document   : deletePayment
-    Created on : 08/06/2020, 5:46:03 PM
+    Created on : 05/06/2020, 5:46:03 PM
     Author     : conce
 --%>
 
@@ -30,6 +30,14 @@
         <div class="mainContainer">
             <h1>Delete Payments</h1>
             <p>Delete Payments</p><br>
+            <table class="mainContainer">
+                <%-- Information to be deleted from the users account --%>
+                <tr><td>Account Name</td><td><input type="text" placeholder="Delete Account Name" name="AName"></td></tr> 
+                <tr><td>Account Number</td><td><input type="text" placeholder="Delete Account Number" name="ANumber"></td></tr>  
+                <tr><td>Expiry Date</td><td><input type="date" placeholder="Delete Expiry Date" name="EXPDate"></td></tr>
+                <!--Search and Delete record-->
+                <tr><td></td><td><input type="submit" value="Delete"></td></tr>                     
+            </table>
         </div>
     </body>
 </html>

@@ -84,6 +84,4 @@ public class Payment {
     public void setExpDate(String expDate) {
         this.expDate = expDate;
     }
-
 }
-
