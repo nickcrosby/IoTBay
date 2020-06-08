@@ -1,0 +1,10 @@
+CREATE TABLE Payment (
+   PaymentID INT NOT NULL,
+   Account_Name VARCHAR(10) NOT NULL,
+   Account_Number INT(10) NOT NULL,
+   Payment_Status BOOLEAN NOT NULL,
+   Date VARCHAR(15) NOT NULL,
+   Total_Payment INT(8) NOT NULL,
+   BSB INT(6) NOT NULL,
+   PRIMARY KEY (PaymentID)
+);

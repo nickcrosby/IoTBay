@@ -1,0 +1,7 @@
+CREATE TABLE PaymentDetails (
+   Account_Number INT NOT NULL,
+   Account_Name VARCHAR(10) NOT NULL,
+   EXPDate VARCHAR(15) NOT NULL,
+   BSB INT NOT NULL,
+   PRIMARY KEY (PaymentID),
+);

@@ -1,0 +1,7 @@
+CREATE TABLE Order (
+   OrderID INT NOT NULL,
+   Status VARCHAR(10),
+   Total_Cost VARCHAR(10) NOT NULL,
+   Quanity VARCHAR(5) NOT NULL,
+   PRIMARY KEY (OrderID)
+);
