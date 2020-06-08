@@ -6,8 +6,9 @@
 package uts.isd.model.dao;
 
 
-import uts.isd.model.Customer;
+import uts.isd.model.Products;
 import java.sql.*;
+import java.util.ArrayList;
 
 /* 
 * DBManager is the primary DAO class to interact with the database. 
@@ -23,28 +24,58 @@ public DBManager(Connection conn) throws SQLException {
 }
 
 //Find user by email and password in the database   
-public Customer findCustomer(String email, String password) throws SQLException {       
-   //setup the select sql query string       
-   //execute this query using the statement field       
+public Products findProduct(String ProductName) throws SQLException {       
+   String fetch = "select * from IOTUSER.PRODUCTS where PRODUCTNAME='" + ProductName + "'";
+   ResultSet rs = st.executeQuery(fetch);
+while (rs.next())   {
+    String productName = rs.getString(2);
+    //PRODUCTID, PRODUCTNAME, PRODUCTDESCRIPTION, PRODUCTCOST,PRODUCTRETAILPRICE, PRODUCTSTOCK
+    if(productName.equals(ProductName)) {
+        int productId = rs.getInt(1);
+        String productDesc = rs.getString(3);
+        double productCost = rs.getDouble(4);
+        double productRP = rs.getDouble(5);
+        int productStock = rs.getInt(6);
+        return new Products(productId, productName, productDesc, productCost, productRP, productStock);
+    }
+    
+}
    //add the results to a ResultSet       
    //search the ResultSet for a user using the parameters               
    return null;
 }
+public Products findProduct(int ProductId) throws SQLException {       
+   String fetch = "select * from IOTUSER.PRODUCTS where PRODUCTID='" + ProductId + "'";
+   ResultSet rs = st.executeQuery(fetch);
+while (rs.next())   {
+    int productId = rs.getInt(1);
+    //PRODUCTID, PRODUCTNAME, PRODUCTDESCRIPTION, PRODUCTCOST,PRODUCTRETAILPRICE, PRODUCTSTOCK
+    if(productId==ProductId) {
+        String productName = rs.getString(2);
+        String productDesc = rs.getString(3);
+        double productCost = rs.getDouble(4);
+        double productRP = rs.getDouble(5);
+        int productStock = rs.getInt(6);
+        return new Products(productId, productName, productDesc, productCost, productRP, productStock);
+    }
+}
+   return null;
+}
 
 //Add a user-data into the database   
-public void addCustomer(String email, String name, String password, String gender, String favcol) throws SQLException {                   //code for add-operation       
-  st.executeUpdate("sql query");   
+public void addProduct(int productId, String productName, String productDesc, double productCost, double productRP, int productStock) throws SQLException {               
+  st.executeUpdate("INSERT INTO IOTUSER.PRODUCTS " + "VALUES ('" + productId + "', '" + productName + "', '" + productDesc + "', '" + productCost + "', '" + productRP + "', '" + productStock + "')");   
 
 }
 
 //update a user details in the database   
-public void updateCustomer( String email, String name, String password, String gender, String favcol) throws SQLException {       
+public void updateProduct( String email, String name, String password, String gender, String favcol) throws SQLException {       
    //code for update-operation   
 
 }       
 
 //delete a user from the database   
-public void deleteCustomer(String email) throws SQLException{       
+public void deleteProduct(String email) throws SQLException{       
    //code for delete-operation   
 
 }
