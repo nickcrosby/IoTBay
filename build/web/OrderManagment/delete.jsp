@@ -24,7 +24,7 @@
         </div>
         <div class="mainContainer">
             <h1>Delete</h1>
-            
+            <p>delete saved order</p>
             
         </div>
     </body>
