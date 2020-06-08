@@ -35,10 +35,10 @@ public class TestDBOrder {
         } catch (ClassNotFoundException | SQLException ex) {
         Logger.getLogger(TestDBOrder.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        }
         private char readChoice() {
             System.out.print("Operation CRUDS or * to exit: ");
-            return in.nextLine() .charAt(0);
+            return in.nextLine().charAt(0);
         }
          
         private void runQueries() throws SQLException{
@@ -91,8 +91,8 @@ public class TestDBOrder {
              }
             System.out.println("Order is added to the database.");
        
-               
-               
+        }  
+      
         
         private void testRead() throws SQLException {
             System.out.print("OrderID: ");
@@ -101,7 +101,7 @@ public class TestDBOrder {
             String date = in.nextLine();
             Orders orders = db.findOrders (orderID, date);
             if (orders != null) {
-                System.out.println("Orders " + orders.getOrders() +" exists in the database.");
+                System.out.println("Order " + orders.getOrders() + " exists in the database.");
             }    else { 
                     System.out.println("Order does not exist.");
             }
@@ -154,7 +154,7 @@ public class TestDBOrder {
             ArrayList<Orders> Orders = db.fectOrders();
             System.out.println("ORDER TABLE: ");
             Orders.stream().forEach((orders) -> {
-                System.out.printf("%-20s %-30s %-20s %-10s \n", orders.getorderID(), orders.getorderStatus(), orders.gettotalCost(), orders.getproductID(), orders.getquantity(), orders.getdate());  
+                System.out.printf("%-20s %-30s %-20s %-10s \n",orders.getorderID(), orders.getorderStatus(), orders.gettotalCost(), orders.getproductID(), orders.getquantity(), orders.getdate());  
             });
             System.out.println();
         } catch (SQLException ex) {
@@ -162,10 +162,10 @@ public class TestDBOrder {
         }
     }
 
-    private void showAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-} 
+}
+
+
+    
 
         
        
