@@ -25,6 +25,10 @@
            <div class="mainContainer">
             <h1>Order</h1>
             <p>Order details</p>
+            <table class="mainProfile">
+                <th>OrderID</th> <th>OrderStatus</th> <th>Cost</th> <th>Product</th> <th>Quantity</th> <th>Date</th>
+                
+            </table>
             <a href="update.jsp" >Update Order</a>
             <a href="delete.jsp" >Delete Order</a><br><br>
         </div>

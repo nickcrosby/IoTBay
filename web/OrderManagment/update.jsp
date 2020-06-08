@@ -25,7 +25,7 @@
         
         <div class="mainContainer">
             <h1>Update</h1>
-            
+            <p>*update saved order</p>
            
             <a href="delete.jsp" >Delete Order</a><br><br>
         </div>
