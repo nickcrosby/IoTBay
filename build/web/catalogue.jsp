@@ -13,13 +13,12 @@
         <!--Navigation bar-->
         <div class="navbar">
             <ul class="navbarElements">
-                <li><a href="index.jsp">Home</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
             </ul>
         </div>
         <div class="mainContainer">
             <h1>Device Catalogue</h1>
-            <p>Error 404: Content not found. Please come back later.</p>
+            <p>View the Catalogue here!</p>
             <!--Logout and Back navigation-->
         </div>
     </body>
