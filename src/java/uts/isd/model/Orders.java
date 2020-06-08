@@ -73,6 +73,10 @@ public class Orders {
     public void setDate(String date) {
         this.date = date;
     }
+
+    public String getOrders() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
   
     
 

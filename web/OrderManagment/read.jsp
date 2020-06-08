@@ -3,7 +3,6 @@
     Created on : 01/06/2020, 11:25:11 AM
     Author     : eduardomoraza
 --%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -25,8 +24,8 @@
         <div class="mainContainer">
             <h1>Order History</h1>
             <table class="mainProfile">
-                <th>OrderID</th> <th>OrderStatus</th> <th>Cost</th> <th>Product</th> <th>Quantity</th> <th>Date</th>
-                
+                <thead><th>OrderID</th>  <th>OrderStatus</th> <th>Cost</th> <th>Product</th> <th>Quantity</th> <th>Date</th></thead>
+                <tr><td> </td>  <td></td>  <td> </td>  <td> </td>  <td> </td>  <td> </td></tr>
             </table>
             
         </div>
