@@ -19,7 +19,7 @@
         <div class="navbar">
             <ul class="navbarElements">
                 <li><a href="../index.jsp">Home</a></li>
-                <li><a href="login.jsp">Back</a></li>
+                <li><a href="../login.jsp">Back</a></li>
                 <li><a href="../logout.jsp">Logout</a></li>
             </ul>
         </div>
@@ -27,7 +27,8 @@
         <div class="mainContainer">
             <h1>Catalogue Administrative Dashboard</h1>
             <p>Search For Existing or Add New Catalogue Products</p><br>
-            <p>*add search items for ProductId, and ProductName.</p>
+            <tr><td>Enter Product ID</td><td><input type="Product ID" placeholder="ID" name="productId"></td>         
+            <td> or  Product Name</td><td><input type="Product Name" placeholder="Name" name="productName"></td></tr><br><br>
             <a href="display.jsp" >Display Found Products</a>
             <a href="add.jsp" >Add New Products</a><br><br>
         </div>
