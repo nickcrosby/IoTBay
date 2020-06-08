@@ -25,7 +25,7 @@
             <section class="mainContainer">
                 <!--Create a new user-->
                 <!--Insert new staff members into database-->
-                <form method="post" action="CreateServlet">
+                <form method="post" action="">
                     <table class="mainContainer">
                         <tr><td>Email</td><td><input type="email" placeholder="Email" name="email"></td></tr>
                         <tr><td>First Name</td><td><input type="text" placeholder="First Name" name="fname"></td></tr> 

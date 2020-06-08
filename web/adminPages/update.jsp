@@ -1,4 +1,5 @@
 <%@page import="uts.isd.model.Staff"%>
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -7,7 +8,7 @@
         <title>Update</title>
         <link rel="stylesheet" href="../styles/style.css">
     </head>
-    <body>
+    <body onload="startTime()">
         <%
             Staff staff = null;
             if (session.getAttribute("staff") != null) {
@@ -37,9 +38,9 @@
             <section class="mainContainer">
                 <!--Create a new user-->
                 <!--Update staff information-->
-                <form method="post" action="CreateServlet">
+                <form method="post" action="">
                     <table class="mainContainer">
-                        <tr><td>Email</td><input type="text" name="email" value="${staff.email}" placeholder="Email"/></td></td></tr>
+                        <tr><td>Email</td><td><input type="text" name="email" value="${staff.getEmail}" placeholder="Email"/></td></td></tr>
                         <tr><td>First Name</td><td><%=staff.getFname()%><input type="text" name="firstname" value="<%=staff.getFname()%>" placeholder="First Name"/></td></td></tr> 
                         <tr><td>Last Name</td><td> <%=staff.getLname()%><input type="text" name="lastname" value="<%=staff.getLname()%>" placeholder="Last Name"/></td>  </td></tr>  
                         <tr><td>Password</td><td> <%=staff.getPassword()%><input type="password" name="password" value="<%=staff.getPassword()%>" placeholder="Password"/></td></td></tr>            

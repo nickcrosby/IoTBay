@@ -43,5 +43,6 @@ public class UpdateServlet extends HttpServlet {
         } catch (SQLException ex) {
             Logger.getLogger(UpdateServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
+        request.getRequestDispatcher("create.jsp").include(request, response);
     }
 }

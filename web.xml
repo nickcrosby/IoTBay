@@ -14,25 +14,25 @@ xml version="1.0" encoding="UTF-8"?>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>CreateController</servlet-name>
-        <servlet-class>uts.isd.controller.CreateController</servlet-class>
+        <servlet-name>CreateServlet</servlet-name>
+        <servlet-class>uts.isd.controller.CreateServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>CreateController</servlet-name>
-        <url-pattern>/CreateController</url-pattern>
+        <servlet-name>CreateServlet</servlet-name>
+        <url-pattern>/CreateServlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>ReadController</servlet-name>
-        <servlet-class>uts.isd.controller.ReadController</servlet-class>
+        <servlet-name>ReadServlet</servlet-name>
+        <servlet-class>uts.isd.controller.ReadServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>ReadController</servlet-name>
-        <url-pattern>/ReadController</url-pattern>
+        <servlet-name>ReadServlet</servlet-name>
+        <url-pattern>/ReadServlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -47,16 +47,27 @@ xml version="1.0" encoding="UTF-8"?>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>DeleteController</servlet-name>
-        <servlet-class>uts.isd.controller.DeleteController</servlet-class>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>uts.isd.controller.UpdateServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>DeleteController</servlet-name>
-        <url-pattern>/DeleteController</url-pattern>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>uts.isd.controller.DeleteServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30
