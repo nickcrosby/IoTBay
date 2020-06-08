@@ -1,0 +1,10 @@
+CREATE TABLE Order_T (
+OrderID INT NOT NULL,
+OrderStatus VARCHAR(10) NOT NULL,
+TotalCost INT NOT NULL,
+ProductID INT NOT NULL,
+Quantity INT NOT NULL,
+Date DATE NOT NULL,
+PRIMARY KEY (OrderID)
+);
+
