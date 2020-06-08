@@ -8,6 +8,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Main site image-->
+        <div class="bgimage">
+        </div>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Payment Confirmation</title>
         <link rel="stylesheet" href="../styles/style.css">
@@ -15,7 +18,6 @@
     <body>
         <h1>Payment Confirmation</h1>
         <p>Your Order was Confirmed!</p>
-        <p>Your Payment Details are: </p>
     <div class="mainContainer">
         <a href="../welcome.jsp" id="welcome">Complete</a>
         <a href="../logout.jsp">Logout</a>

@@ -1,5 +1,5 @@
 CREATE TABLE Payment (
-   PaymentID INT NOT NULL,
+   PaymentID INT NOT NULL AUTO_INCREMENT,
    Account_Name VARCHAR(10) NOT NULL,
    Account_Number INT(10) NOT NULL,
    Payment_Status BOOLEAN NOT NULL,
