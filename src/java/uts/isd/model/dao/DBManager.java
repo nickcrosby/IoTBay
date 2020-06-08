@@ -5,7 +5,7 @@
  */
 package uts.isd.model.dao;
 
-
+import uts.isd.model.Products;
 import uts.isd.model.Payment;
 import java.sql.*;
 import java.util.ArrayList;
@@ -15,9 +15,6 @@ import uts.isd.model.Customer;
 * DBManager is the primary DAO class to interact with the database. 
 * Complete the existing methods of this classes to perform CRUD operations with the db.
 */
-import uts.isd.model.Products;
-import java.sql.*;
-import java.util.ArrayList;
 
 public class DBManager {
 
@@ -132,11 +129,9 @@ public boolean checkPayment (String account_Name, int account_Number) throws SQL
     return false;
 }
 
-}
 //Add a product into the database   
 public void addProduct(int productId, String productName, String productDesc, double productCost, double productRP, int productStock) throws SQLException {               
   st.executeUpdate("INSERT INTO IOTUSER.PRODUCTS " + "VALUES ('" + productId + "', '" + productName + "', '" + productDesc + "', '" + productCost + "', '" + productRP + "', '" + productStock + "')");   
-
 }
 
 //update a products details in the database   
